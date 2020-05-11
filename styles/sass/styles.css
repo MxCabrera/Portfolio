@@ -235,7 +235,97 @@ html {
   overflow: hidden;
 }
 
-.miguel {
-  color: red;
+body {
+  font-size: 62.5%;
+}
+
+.wrapperPortfolio {
+  max-width: 1600px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  padding-left: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flexC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  height: 800px;
+  background-color: grey;
+}
+
+header .titleNav {
+  width: 100%;
+  background-color: white;
+}
+
+header .headerTitle {
+  width: 50%;
+  margin: 0 auto;
+}
+
+header .headerTitle h1 {
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 8rem;
+}
+
+header .headerTitle h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+}
+
+.logoContainer {
+  width: 10%;
+}
+
+.logoContainer .logo {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+
+.logoContainer .logo img {
+  width: 100%;
+}
+
+ul {
+  width: 90%;
+}
+
+ul li {
+  font-size: 1.5rem;
+}
+
+ul li:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=styles.css.map */

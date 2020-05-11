@@ -1,0 +1,24 @@
+body {
+   font-size: 62.5%;
+}
+
+.wrapperPortfolio {
+   max-width: 1600px; 
+   width: 95%;
+   margin: 0 auto;
+}
+
+.flex {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   list-style: none;
+   padding-left: 0;
+   align-items: center;
+}
+
+.flexC {
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+}
