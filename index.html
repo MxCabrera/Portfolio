@@ -22,11 +22,11 @@
                </div>
             </div>
             <ul class="flex ul">
-               <li id="about">About</li>
-               <li id="portfolio">Portfolio</li>
-               <li id="skills">Skills</li>
-               <li id="contact">Contact</li>
-               <li id="blog">Blog</li>
+               <li id="about"><a href="#about">About</a></li>
+               <li id="portfolio"><a href="#portfolio">Portfolio</a></li>
+               <li id="skills"><a href="#skill">Skills</a></li>
+               <li id="contact"><a href="#contact">Contact</a></li>
+               <li id="blog"><a href="#blog">Blog</a></li>
             </ul>
          </nav>
          <div class="headerTitle flexC">
@@ -34,7 +34,7 @@
             <h2>Front end developer</h2>
          </div>
          <div> 
-            <button>Click to go down</button>
+            <button class="headerButton">Click to go down</button>
          </div>
       </header>
 
@@ -52,46 +52,56 @@
          <section id="portfolio" class="projects">
             <div class="wrapper">
                <h2>Portfolio</h2>
-               <div class="projectContainer flex">
-                  <aside class="project1">
+               <div class="projectContainer">
+                  <aside class="project">
                   <a href="">
-                     <img src="" alt="">
+                     <div class="projectImg">
+                        <img src="./assets/project2.JPG" alt="">
+                     </div>
                      <div>
                         <p>info name</p>
                         <p>info about it</p>
                      </div>
                   </a>
                   </aside>
-                  <aside class="project2">
+                  <aside class="project">
                      <a href="">
-                        <img src="" alt="">
+                        <div class="projectImg">
+                           <img src="./assets/project1.JPG" alt="">
+                        </div>
                         <div>
                            <p>info name</p>
                            <p>info about it</p>
                         </div>
                      </a>
                   </aside>
-                  <aside class="project3">
+                  <aside class="project">
                      <a href="">
-                        <img src="" alt="">
+                        <div class="projectImg">
+                           <img src="./assets/project3.JPG" alt="">
+                        </div>
                         <div>
                            <p>info name</p>
                            <p>info about it</p>
                         </div>
                      </a>
                   </aside>
-                  <aside class="project4">
+                  <aside class="project">
                      <a href="">
-                        <img src="" alt="">
+                        <div class="projectImg">
+                           <img src="./assets/project4.JPG" alt="">
+                        </div>
                         <div>
                            <p>info name</p>
                            <p>info about it</p>
                         </div>
                      </a>
                   </aside>
-                  <aside class="project5">
+                  <aside class="project">
                      <a href="">
-                        <img src="" alt="">
+                        <div class="projectImg">
+                           <img src="./assets/project5.JPG" alt="">
+                        </div>
                         <div>
                            <p>info name</p>
                            <p>info about it</p>
@@ -105,15 +115,22 @@
          <section id="skills" class="skills">
             <div class="wrapper">
                <h2>Skills</h2>
-               <ul>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>JavaScript</li>
-                  <li>JQuery</li>
-                  <li>React</li>
-                  <li>Sass</li>
-                  <li>GitHub</li>
+               <ul class="flex wrap">
+                  <li><i class="fab fa-html5"></i></li>
+                  <li><i class="fab fa-css3-alt"></i></li>
+                  <li><i class="fab fa-js"></i></li>
+                  <li>
+                     <div>
+                        <img src="./assets/jquery.png" alt="jquery">
+                     </div>
+                  </li>
+                        
+                  <li><i class="fab fa-react"></i></li>
+                  <li><i class="fab fa-sass"></i></li>
+                  <li><i class="fab fa-github"></i></li>
                   <li>Firebase</li>
+                  <li><i class="fab fa-git"></i></li>
+                  <li><i class="fas fa-laptop"></i></li>
                </ul>
             </div>
          </section>
@@ -123,20 +140,26 @@
             <div class="wrapper">
                <h2>Blogs</h2>
                <div class="flex">
-                  <div>
-                     <img src="" alt="">
-                     <h3>Blog#1</h3>
-                     <p>Info</p>
+                  <div class="blogPost">
+                     <div class="blogImg">
+                        <img src="assets/carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg" alt="computer">
+                     </div>
+                     <h3>Change of perception</h3>
+                     <p>Intro to my life before Code</p>
                   </div>
-                  <div>
-                     <img src="" alt="">
-                     <h3>Blog#2</h3>
-                     <p>Info</p>
+                  <div class="blogPost">
+                     <div class="blogImg">
+                        <img src="assets/vanilla.jpeg" alt="vanilla icecream">
+                     </div>
+                     <h3>Creating first project in Vanilla JavaScript</h3>
+                     <p>Details about how my experience was with JavaScript and the initial struggle between separating jQuery.</p>
                   </div>
-                  <div>
-                     <img src="" alt="">
-                     <h3>Blog#3</h3>
-                     <p>Info</p>
+                  <div class="blogPost">
+                     <div class="blogImg">                     
+                        <img src="assets/axios.png" alt="axios">
+                     </div>
+                     <h3>Grab all the data using an Axios.all( )</h3>
+                     <p>Basic lesson on the axios.all method which utilizes all data in an API</p>
                   </div>
                </div>
             </section>
@@ -145,17 +168,22 @@
 
 
       <footer>
-         <section id="contacts">
-            <div class="wrapper">
-               <div>Contacts</div>
-               <p>You can also reach me at: migueledward@hotmail.com</p>
-               <div>
-                  <form action="">
-                     <input type="text" placeholder="name">
-                     <input type="text" placeholder="phone number">
-                     <textarea name="" id="" cols="30" rows="10">Message</textarea>
-                  </form>
+         <section id="contact" class="contact">
+            <div class="wrapper flex">
+               <div class="contactImg">
+                  <img src="assets/corinne-kutz-tMI2_-r5Nfo-unsplash.jpg" alt="computer">
                </div>
+               <aside>
+                  <h2>Contacts</h2>
+                  <p>You can also reach me at: migueledward@hotmail.com</p>
+                  <div>
+                     <form action="">
+                        <input type="text" placeholder="name">
+                        <input type="text" placeholder="phone number">
+                        <textarea name="" id="" cols="30" rows="10">Message</textarea>
+                     </form>
+                  </div>
+               </aside>
             </div>
          </section>
          <div class="copyright">
@@ -163,8 +191,11 @@
          </div>
       </footer>
    </div>
-   <script src="https://cdn.jsdelivr.net/kute.js/1.6.5/kute.min.js"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/kute.js/1.6.5/kute.min.js"></script> -->
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src='https://code.jquery.com/jquery-3.4.0.min.js'
+   integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
 <script src="script.js"></script>
 </html>
  
