@@ -7,6 +7,8 @@
    <link rel="stylesheet" href="styles/sass/styles.css">
    <script src="https://kit.fontawesome.com/c9714a9747.js" crossorigin="anonymous"></script>
    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
    <title>Miguel Cabrera</title>
 </head>
 
@@ -22,11 +24,11 @@
                </div>
             </div>
             <ul class="flex menu">
-               <li id="about"><a href="#about">About</a></li>
-               <li id="portfolio"><a href="#portfolio">Portfolio</a></li>
-               <li id="skills"><a href="#skill">Skills</a></li>
-               <li id="contact"><a href="#contact">Contact</a></li>
-               <li id="blog"><a href="#blog">Blog</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#skill">Skills</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <li><a href="#blog">Blog</a></li>
             </ul>
          </nav>
          <div class="headerTitle flexC">
@@ -34,7 +36,7 @@
             <h2>Front end developer</h2>
          </div>
          <div> 
-            <button class="headerButton">Click to go down</button>
+            <a class="headerButton"><i class="fas fa-angle-double-down"></i></a>
          </div>
       </header>
 
@@ -143,25 +145,40 @@
             </div>
          </section>
 
-         <section id="skills" class="skills">
+         <section id="skill" class="skills">
             <div class="wrapper">
                <h2>Skills*</h2>
                <ul class="flex wrap">
-                  <li><i class="fab fa-html5"></i></li>
-                  <li><i class="fab fa-css3-alt"></i></li>
-                  <li><i class="fab fa-js"></i></li>
-                  <li>
-                     <div>
-                        <img src="./assets/jquery.png" alt="jquery">
-                     </div>
+                  <li><i class="fab fa-html5"></i>
+                  <p>HTML5</p>
                   </li>
-                        
-                  <li><i class="fab fa-react"></i></li>
-                  <li><i class="fab fa-sass"></i></li>
-                  <li><i class="fab fa-github"></i></li>
-                  <li>Firebase</li>
-                  <li><i class="fab fa-git"></i></li>
-                  <li><i class="fas fa-laptop"></i></li>
+                  <li><i class="fab fa-css3-alt"></i>
+                  <p>CSS3</p>
+                  </li>
+                  <li><i class="fab fa-js"></i>
+                  <p>JavaScript</p>
+                  </li>
+                  <li><i class="devicon-jquery-plain"></i>
+                  <p class="jquery">jQuery</p>
+                  </li>
+                  <li><i class="fab fa-react"></i>
+                  <p>React</p>
+                  </li>
+                  <li><i class="fab fa-sass"></i>
+                  <p>Sass</p>
+                  </li>
+                  <li><i class="fab fa-github"></i>
+                  <p>GitHub</p>
+                  </li>
+                  <li><i class="fas fa-fire-alt"></i>
+                  <p>Firebase</p>
+                  </li>
+                  <li><i class="fab fa-git"></i>
+                  <p>Git</p>
+                  </li>
+                  <li><i class="fas fa-laptop"></i>
+                  <p>Responsive</p>
+                  </li>
                </ul>
             </div>
          </section>
@@ -170,7 +187,7 @@
          <section id="blog" class="blog">
             <div class="wrapper">
                <h2>Blogs*</h2>
-               <div class="flex">
+               <div class="flex flexP">
                   <div class="blogPost">
                      <div class="blogImg">
                         <a href="https://medium.com/@mxcabrera/a-change-in-perception-9b034a252d37">
@@ -202,36 +219,41 @@
                      <button><a href="https://medium.com/@mxcabrera/send-multiple-requests-for-data-with-axios-all-3589a5390037">Check out my post</a></button>
                   </div>
                </div>
-            </section>
-            </div>
+         </section>
       </main>
+   </div>
 
 
       <footer>
-         <section id="contact" class="contact">
-            <div class="wrapper flex">
-               <div class="contactImg">
-                  <img src="assets/blake-connally-B3l0g6HLxr8-unsplash.jpg" alt="computer">
+         <div class="wrapperPortfolio">
+            <section id="contact" class="contact">
+               <div class="wrapper flex flexP">
+                  <div class="contactImg">
+                     <img src="assets/nikita-kachanovsky-OVbeSXRk_9E-unsplash.jpg" alt="computer">
+                     <div>
+                        <p>Thanks for stopping by!</p>
+                        <p>You can also reach me at: migueledward@hotmail.com</p>
+                     </div>
+                  </div>
+                  <aside class="contactInfo flexC">
+                     <h2>Contacts*</h2>
+                     <nav class="contactNav">
+                        <ul class="flex">
+                           <li><a href="https://twitter.com/mxcabreracodes"><i class="fab fa-twitter"></i></a></li>
+                           <li><a href="https://www.linkedin.com/in/miguel-cabrera-b3291467/"><i class="fab fa-linkedin"></i></a></li>
+                           <li><a href="https://github.com/MxCabrera"><i class="fab fa-github"></i></a></li>
+                           <li><a href="https://medium.com/@mxcabrera"><i class="fab fa-medium"></i></a></li>
+                        </ul>
+                     </nav>
+                     <form action="" class="flexC">
+                        <input type="text" placeholder="name" id="mContact">
+                        <input type="text" placeholder="phone number" id="mContact">
+                        <textarea name="" id="" cols="20" rows="5" placeholder="message" id="mContact">Message</textarea>
+                     </form>
+                  </aside>
                </div>
-               <aside class="contactInfo flexC">
-                  <h2>Contacts*</h2>
-                  <nav class="contactNav">
-                     <ul class="flex">
-                        <li><a href="https://twitter.com/mxcabreracodes"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/miguel-cabrera-b3291467/"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://github.com/MxCabrera"><i class="fab fa-github"></i></a></li>
-                        <li><a href="https://medium.com/@mxcabrera"><i class="fab fa-medium"></i></a></li>
-                     </ul>
-                  </nav>
-                  <form action="" class="flexC">
-                     <input type="text" placeholder="name" id="mContact">
-                     <input type="text" placeholder="phone number" id="mContact">
-                     <textarea name="" id="" cols="20" rows="5" placeholder="message" id="mContact">Message</textarea>
-                  </form>
-                  <p>You can also reach me at: migueledward@hotmail.com</p>
-               </aside>
-            </div>
-         </section>
+            </section>
+         </div>
          <div class="copyright">
             <p>Copyright Miguel Cabrera 2020</p>
          </div>
