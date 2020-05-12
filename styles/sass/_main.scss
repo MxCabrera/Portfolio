@@ -16,6 +16,16 @@
          box-shadow: 2px 2px 10px #000;
       }
    }
+   .headshot {
+      overflow:hidden;
+      border-right: .15em solid orange;
+      white-space: nowrap;
+      // margin: 0 auto;
+      letter-spacing: .15em;
+      animation:
+         typing 10.5s steps(40,start),
+         blink-caret 2s step-end infinite;
+   }
    p {
       font-size: 1.2rem;
    }
@@ -30,10 +40,20 @@
    }
 }
 
+@keyframes typing {
+   from { width: 0 }
+   to { width: 50% }
+}
+
+@keyframes blink-caret {
+   from, to { border-color: transparent }
+   90% { border-color: blue }
+}
+
 .projects {
    background: linear-gradient(135deg, rgba(83, 83, 83, 0.9), rgba(119, 119, 119, 0.9), rgba(238, 236, 236, 0.9), rgba(160, 158, 158, 0.9), rgba(53, 53, 53, 0.9));
    background-attachment: fixed;
-   padding: 3rem 0 8rem 0;
+   padding: 3rem 0 5rem 0;
    h2 {
       font-size: 3rem;
       font-family: 'Dancing Script', cursive;
@@ -51,9 +71,13 @@
          width: 47%;
          border: 1rem solid rgb(39,39,39);
          border-radius: 10px; 
-         box-shadow: 2px 2px 10px #fff;
+         box-shadow: 2px 2px 10px #000;
          img {
             width: 100%;
+         }
+         &:hover {
+            transform: scale(1.2);
+            transition: all 1s;
          }
       }
       .projectInfo {
