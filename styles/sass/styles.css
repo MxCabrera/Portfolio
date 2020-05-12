@@ -237,11 +237,18 @@ html {
 
 body {
   font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 .wrapperPortfolio {
   max-width: 1600px;
   width: 95%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -287,14 +294,15 @@ header .titleNav {
 }
 
 header .headerTitle {
-  width: 50%;
+  width: 75%;
   margin: 0 auto;
 }
 
 header .headerTitle h1 {
   font-size: 5rem;
   text-align: center;
-  margin-top: 8rem;
+  margin-top: 15rem;
+  margin-bottom: 1rem;
 }
 
 header .headerTitle h2 {
@@ -327,5 +335,59 @@ ul li {
 
 ul li:hover {
   text-decoration: underline;
+}
+
+.about {
+  padding: 1rem;
+}
+
+.about h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+}
+
+.about p {
+  font-size: 1.2rem;
+}
+
+.projects {
+  background-color: grey;
+  padding: 1rem;
+}
+
+.projects h2 {
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+.skills {
+  padding: 1rem;
+}
+
+.skills h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+}
+
+.blog {
+  background-color: grey;
+  padding: 1rem;
+}
+
+.blog h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+}
+
+.copyright {
+  background-color: #000;
+  padding: 2rem;
+}
+
+.copyright p {
+  color: white;
+  margin: 0;
+  text-align: center;
+  font-size: 1.1rem;
 }
 /*# sourceMappingURL=styles.css.map */
