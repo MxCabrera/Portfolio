@@ -293,11 +293,15 @@ body {
 header {
   height: 800px;
   background: linear-gradient(45deg, rgba(83, 83, 83, 0.9), rgba(119, 119, 119, 0.9), rgba(238, 236, 236, 0.9), rgba(160, 158, 158, 0.9), rgba(53, 53, 53, 0.9));
+  background-attachment: fixed;
 }
 
 header .titleNav {
   width: 100%;
   background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 header .headerTitle {
@@ -414,6 +418,7 @@ header .headerButton:hover {
 
 .projects {
   background: linear-gradient(135deg, rgba(83, 83, 83, 0.9), rgba(119, 119, 119, 0.9), rgba(238, 236, 236, 0.9), rgba(160, 158, 158, 0.9), rgba(53, 53, 53, 0.9));
+  background-attachment: fixed;
   padding: 3rem 0 8rem 0;
 }
 
@@ -545,6 +550,7 @@ header .headerButton:hover {
 
 .blog {
   background: linear-gradient(45deg, rgba(236, 237, 241, 0.8), rgba(238, 236, 241, 0.8), rgba(240, 236, 237, 0.8)), url(../../assets/geo1.jpg);
+  background-attachment: fixed;
   background-size: 50%;
   padding: 3rem 0 8rem 0;
 }
@@ -610,6 +616,11 @@ header .headerButton:hover {
 .contact .flexP .contactImg div {
   text-align: center;
   font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.contact .flexP .contactImg div span {
+  font-weight: 700;
 }
 
 .contact .flexP .contactInfo {
@@ -620,27 +631,32 @@ header .headerButton:hover {
   width: 100%;
 }
 
-.contact .flexP .contactInfo .contactNav li {
-  margin: 0.5rem;
-  font-size: 2rem;
-}
-
-.contact .flexP .contactInfo .contactNav li i {
-  color: #133261;
-}
-
 .contact .flexP .contactInfo h2 {
   font-family: 'Dancing Script', cursive;
   font-size: 3rem;
   margin: 0.5rem auto;
 }
 
-.contact .flexP .contactInfo p {
-  font-size: 1rem;
-  text-align: center;
+.contactNav li {
+  margin: 0.5rem;
+  font-size: 2rem;
+}
+
+.contactNav li i {
+  color: #133261;
+}
+
+.contactNav li i:hover {
+  color: grey;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 form {
+  width: 100%;
+}
+
+form label {
   width: 100%;
 }
 
@@ -650,6 +666,19 @@ form textarea {
   margin: 0.5rem 0;
   font-size: 1rem;
   padding: 0.5rem;
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+}
+
+form button:hover {
+  background-color: grey;
 }
 
 .copyright {

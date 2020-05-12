@@ -32,6 +32,7 @@
 
 .projects {
    background: linear-gradient(135deg, rgba(83, 83, 83, 0.9), rgba(119, 119, 119, 0.9), rgba(238, 236, 236, 0.9), rgba(160, 158, 158, 0.9), rgba(53, 53, 53, 0.9));
+   background-attachment: fixed;
    padding: 3rem 0 8rem 0;
    h2 {
       font-size: 3rem;
@@ -144,6 +145,7 @@
 .blog {
    // background-color: rgb(186, 201, 206);
    background: linear-gradient(45deg, rgba(236, 237, 241, 0.8), rgba(238, 236, 241, 0.8), rgba(240, 236, 237, 0.8)), url(../../assets/geo1.jpg);
+   background-attachment: fixed;
    background-size: 50%;
    padding: 3rem 0 8rem 0;
    
@@ -190,28 +192,35 @@
          div {
             text-align: center;
             font-size: 1rem;
+            text-transform: uppercase;
+            span {
+               font-weight: 700;
+            }
          }
       }
       .contactInfo {
          width: 50%;
          .contactNav {
             width: 100%;
-            li {
-               margin: 0.5rem;
-               font-size: 2rem;
-               i {
-                  color: rgb(19, 50, 97);
-               }
-            }
          }
          h2 {
             font-family: 'Dancing Script', cursive;
             font-size: 3rem;
             margin: 0.5rem auto;
          }
-         p {
-            font-size: 1rem;
-            text-align: center;
+      }
+   }
+}
+
+.contactNav {
+   li {
+      margin: 0.5rem;
+      font-size: 2rem;
+      i {
+         color: rgb(19, 50, 97);
+         &:hover {
+            color: grey;
+            transition: all 0.3s;
          }
       }
    }
@@ -219,12 +228,27 @@
 
 form {
    width: 100%;
+   label {
+      width: 100%;
+   }
    input,
    textarea {
       width: 100%;
       margin: 0.5rem 0;
       font-size: 1rem;
       padding: 0.5rem;
+   }
+   button {
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-family: 'Dancing Script', cursive;
+      font-weight: 700;
+      letter-spacing: 1.6px;
+      &:hover {
+         background-color: grey;
+
+      }
    }
 }
 

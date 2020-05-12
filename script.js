@@ -3,7 +3,7 @@ const app = {};
 
 $('.headerButton').on('click', function() {
    let audio = new Audio('./assets/intro.mp3');
-   audio.volume = 0.02
+   audio.volume = 0.012
    window.scrollTo(0,800);
    audio.play()
 })
@@ -32,6 +32,11 @@ $(document).ready(function () {
          });
       } // End if
    });
+});
+
+AOS.init({
+   offset: 400,
+   duration: 1000
 });
 
 console.log('hey')
