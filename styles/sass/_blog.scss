@@ -20,6 +20,9 @@
    align-items: center;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
+   .card {
+      border: 0.5px solid rgb(124, 124, 124);
+   }
    .quotes {
       width: 80vw;
       min-height: 400px;
