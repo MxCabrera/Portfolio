@@ -7,8 +7,7 @@
    <link rel="stylesheet" href="styles/sass/styles.css">
    <script src="https://kit.fontawesome.com/c9714a9747.js" crossorigin="anonymous"></script>
    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet"
-      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
    <title>Miguel Cabrera</title>
 </head>
@@ -25,10 +24,10 @@
                </div>
             </div>
             <ul class="flex menu">
-               <li><a href="#about">About</a></li>
-               <li><a href="#portfolio">Portfolio</a></li>
-               <li><a href="#skill">Skills</a></li>
-               <li><a href="#contact">Contact</a></li>
+               <li><a href="#about">About</a></li>|
+               <li><a href="#portfolio">Portfolio</a></li>|
+               <li><a href="#skill">Skills</a></li>|
+               <li><a href="#contact">Contact</a></li>|
                <li><a href="#blog">Blog</a></li>
             </ul>
          </nav>
@@ -45,25 +44,27 @@
       <main>
          <section id="about" class="about">
             <div class="wrapper">
-               <h2 class="section">About*</h2>
+               <h2 class="section" data-aos="fade-up">About*</h2>
                <div class="miguel" data-aos="fade-up">
                   <img src="./assets/headshot.png" alt="miguel">
                </div>
                <p data-aos="fade-right" class="headshot">Hi, I'm Miguel Cabrera. </p>
-               <p data-aos="fade-up">I am a front end developer with a passion for building and sketching. With a background in architectural technology and customer service, I am dedicated to my craft and aim to create websites that provide clients with great design, functionality and accessibility. Coding has allowed me to express my creativity while creating a sound structure to build with. I am excited to begin this new journey with a positive mindset and an open mind. When I'm not coding, on my spare time I enjoy trying new food, playing basketball, and spending time with my family and 2 dogs.
-               </p>
-               <button data-aos="fade-right"><a href="https://www.google.ca">Resume</a></button>
+               <div data-aos="fade-up">
+                  <p>I am a front end developer with a passion for building and sketching. With a background in architectural technology and customer service, I am dedicated to my craft and aim to create websites that provide clients with great design, functionality and accessibility. Coding has allowed me to express my creativity while creating a sound structure to build with. I am excited to begin this new journey with a positive mindset and an open mind. When I'm not coding, on my spare time I enjoy trying new food, playing basketball, and spending time with my family and 2 dogs.
+                  </p>
+                  <button><a href="https://www.google.ca">Resume</a></button>
+               </div>
             </div>
          </section>
 
 
-         <section id="portfolio" class="projects">
+         <section id="portfolio" class="projects" data-aos="fade-up">
             <div class="wrapper">
                <h2 class="section">Portfolio*</h2>
                <div class="projectContainer">
                   <aside class="project projectLink" data-aos="fade-right">
                   <div class="flex flexP">
-                     <div class="projectImg">
+                     <div class="projectImg" data-aos="flip-up">
                         <img src="./assets/project7.JPG" alt="Breaking Down the Bad">
                      </div>
                      <div class="projectInfo flexC">
@@ -96,14 +97,14 @@
                               <button><a href="">GitHub</a></button>
                            </div>
                         </div>
-                        <div class="projectImg">
+                        <div class="projectImg" data-aos="flip-up">
                            <img src="./assets/project2.JPG" alt="">
                         </div>
                      </div>
                   </aside>
                   <aside class="project projectLink" data-aos="fade-right">
                      <div class="flex flexP">
-                        <div class="projectImg">
+                        <div class="projectImg" data-aos="flip-up">
                            <img src="./assets/project5.JPG" alt="">
                         </div>
                         <div class="projectInfo">
@@ -124,14 +125,14 @@
                               <button><a href="">GitHub</a></button>
                            </div>
                         </div>
-                        <div class="projectImg">
+                        <div class="projectImg" data-aos="flip-up">
                            <img src="./assets/project6.JPG" alt="">
                         </div>
                      </div>
                   </aside>
                   <aside class="project projectLink" data-aos="fade-right">
                         <div class="flex flexP">
-                           <div class="projectImg">
+                           <div class="projectImg" data-aos="flip-up">
                               <img src="./assets/project8.JPG" alt="">
                            </div>
                            <div class="projectInfo">
@@ -148,7 +149,7 @@
 
          <section id="skill" class="skills" data-aos="fade-down">
             <div class="wrapper">
-               <h2 class="section">Skills*</h2>
+               <h2 class="section" data-aos="fade-down">Skills*</h2>
                <ul class="flex wrap">
                   <li><i class="fab fa-html5"></i>
                   <p>HTML5</p>
@@ -174,20 +175,26 @@
                   <li><i class="fas fa-fire-alt"></i>
                   <p>Firebase</p>
                   </li>
-                  <li><i class="fab fa-git"></i>
+                  <li><i class="fab fa-git-alt"></i>
                   <p>Git</p>
                   </li>
                   <li><i class="fas fa-laptop"></i>
                   <p>Responsive</p>
+                  </li>
+                  <li><i class="fas fa-terminal"></i>
+                  <p>Terminal</p>
+                  </li>
+                  <li><i class="fas fa-universal-access"></i>
+                  <p>Accessibility</p>
                   </li>
                </ul>
             </div>
          </section>
 
 
-         <section id="blog" class="blog">
+         <section id="blog" class="blog" data-aos="fade-down">
             <div class="wrapper">
-               <h2 class="section">Blogs*</h2>
+               <h2 class="section" data-aos="fade-down">Blogs*</h2>
                <div class="flex flexP">
                   <div class="blogPost" data-aos="fade-right">
                      <div class="blogImg">
@@ -195,9 +202,11 @@
                            <img src="assets/carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg" alt="computer">
                         </a>
                      </div>
-                     <h3>Change of perception</h3>
-                     <p>Intro to my life before Code</p>
-                     <button><a href="https://medium.com/@mxcabrera/a-change-in-perception-9b034a252d37">Check out my post</a></button>
+                     <div class="blogInfo">
+                        <h3>Change of perception</h3>
+                        <p>Intro to my life before Code</p>
+                        <button><a href="https://medium.com/@mxcabrera/a-change-in-perception-9b034a252d37">Check out my post</a></button>
+                     </div>
                   </div>
                   <div class="blogPost" data-aos="fade-up">
                      <div class="blogImg">
@@ -205,9 +214,11 @@
                            <img src="assets/vanilla.jpeg" alt="vanilla icecream">
                         </a>
                      </div>
-                     <h3>Creating first project in Vanilla JavaScript</h3>
-                     <p>Details about how my experience was with JavaScript and the initial struggle between separating jQuery.</p>
-                     <button><a href="https://medium.com/@mxcabrera/how-i-made-my-first-project-using-vanilla-javascript-c62151c60d01">Check out my post</a></button>
+                     <div class="blogInfo">
+                        <h3>Creating first project in Vanilla JavaScript</h3>
+                        <p>Details about how my experience was with JavaScript and the initial struggle between separating jQuery.</p>
+                        <button><a href="https://medium.com/@mxcabrera/how-i-made-my-first-project-using-vanilla-javascript-c62151c60d01">Check out my post</a></button>
+                     </div>
                   </div>
                   <div class="blogPost" data-aos="fade-left">
                      <div class="blogImg">  
@@ -215,9 +226,11 @@
                            <img src="assets/axios.png" alt="axios">
                         </a>
                      </div>
-                     <h3>Grab all the data using an Axios.all( )</h3>
-                     <p>Basic lesson on the axios.all method which utilizes all data in an API</p>
-                     <button><a href="https://medium.com/@mxcabrera/send-multiple-requests-for-data-with-axios-all-3589a5390037">Check out my post</a></button>
+                     <div class="blogInfo">
+                        <h3>Grab all the data using an Axios.all( )</h3>
+                        <p>Basic lesson on the axios.all method which utilizes all data in an API</p>
+                        <button><a href="https://medium.com/@mxcabrera/send-multiple-requests-for-data-with-axios-all-3589a5390037">Check out my post</a></button>
+                     </div>
                   </div>
                </div>
          </section>
@@ -274,6 +287,7 @@
       </footer>
    </div>
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script src="your_path/choreographer.min.js"></script>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src='https://code.jquery.com/jquery-3.4.0.min.js'

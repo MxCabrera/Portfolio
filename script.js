@@ -1,11 +1,18 @@
 const app = {};
 
+app.isPlaying = undefined;
+
 
 $('.headerButton').on('click', function() {
-   let audio = new Audio('./assets/intro.mp3');
-   audio.volume = 0.012
    window.scrollTo(0,800);
-   audio.play()
+   if (app.isPlaying) {
+      audio.stop()
+   } else {
+      app.isPlaying = true;
+      let audio = new Audio('./assets/intro.mp3');
+      audio.volume = 0.01;
+      audio.play();
+   }
 })
 
 
@@ -35,9 +42,13 @@ $(document).ready(function () {
 });
 
 AOS.init({
-   offset: 300,
-   duration: 1000
+   offset: 0,
+   duration: 900
 });
 
 console.log('hey')
 
+let choreographer = new Choreographer(config)
+choreographer.runAnimationsAt(position)
+
+console.log(choreographer)

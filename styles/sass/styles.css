@@ -293,7 +293,8 @@ body {
 
 .section {
   border-bottom: 5px solid #2b4152;
-  width: 10%;
+  width: 10rem;
+  text-shadow: 2px 2px 1px #fff;
 }
 
 header {
@@ -305,6 +306,7 @@ header {
 header .titleNav {
   width: 100%;
   background-color: white;
+  border: 1px solid black;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -313,7 +315,7 @@ header .titleNav {
 header .headerTitle {
   width: 75%;
   margin: 0 auto;
-  text-shadow: 2px 2px 10px #fff;
+  text-shadow: 10px 10px 1px #fff;
 }
 
 header .headerTitle h1 {
@@ -368,12 +370,16 @@ header .headerButton:hover {
   font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  color: black;
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+
+.menu li::after {
+  content: '*';
+  color: rgba(0, 0, 0, 0);
 }
 
 .menu li:hover {
-  color: grey;
-  text-decoration: underline;
+  border-bottom: 3px solid #2b4152;
 }
 
 .menu li:hover::after {
@@ -384,6 +390,10 @@ header .headerButton:hover {
 .menu li a {
   text-decoration: none;
   color: #000;
+}
+
+.menu li a:hover {
+  color: #b1b0b0;
 }
 
 .about {
@@ -409,11 +419,12 @@ header .headerButton:hover {
 
 .about .headshot {
   overflow: hidden;
-  border-right: .15em solid orange;
+  border-right: .15em solid blue;
   white-space: nowrap;
-  letter-spacing: .15em;
-  -webkit-animation: typing 10.5s steps(40, start), blink-caret 2s step-end infinite;
-          animation: typing 10.5s steps(40, start), blink-caret 2s step-end infinite;
+  letter-spacing: .15rem;
+  -webkit-animation: typing 8.5s steps(40, start), blink-caret 1s step-end infinite;
+          animation: typing 8.5s steps(40, start), blink-caret 1s step-end infinite;
+  width: 35%;
 }
 
 .about p {
@@ -468,7 +479,7 @@ header .headerButton:hover {
 }
 
 .projects {
-  background: linear-gradient(135deg, rgba(83, 83, 83, 0.9), rgba(119, 119, 119, 0.9), rgba(238, 236, 236, 0.9), rgba(160, 158, 158, 0.9), rgba(53, 53, 53, 0.9));
+  background: linear-gradient(135deg, rgba(204, 204, 204, 0.9), rgba(207, 207, 207, 0.9), rgba(238, 236, 236, 0.9)), url(../../assets/geo2.jpg);
   background-attachment: fixed;
   padding: 3rem 0 5rem 0;
 }
@@ -502,8 +513,6 @@ header .headerButton:hover {
 }
 
 .project .flexP .projectImg:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -522,25 +531,30 @@ header .headerButton:hover {
 .project .flexP .projectInfo h3 {
   font-size: 1.8rem;
   margin: 0;
+  color: white;
+  text-shadow: 5px 5px 1px #000;
 }
 
 .project .flexP .projectInfo button {
-  padding: 0.3rem;
+  padding: 0.8rem;
+  background-color: black;
+  border-radius: none;
 }
 
 .project .flexP .projectInfo button a {
-  color: black;
+  color: white;
   text-decoration: none;
+  font-size: 0.6rem;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
 }
 
-.projectInfo:hover > .projectImg {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+.project .flexP .projectInfo button:hover {
+  background-color: white;
 }
 
-.projectImg > .projectInfo:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+.project .flexP .projectInfo button:hover a {
+  color: black;
 }
 
 .projectLink {
@@ -570,7 +584,7 @@ header .headerButton:hover {
 .skills .wrap li {
   color: #133261;
   list-style: none;
-  width: 17%;
+  width: 25%;
   text-align: center;
   margin: 1rem 0 0.5rem 0;
   padding: 0.5rem;
@@ -607,7 +621,7 @@ header .headerButton:hover {
 }
 
 .blog {
-  background: linear-gradient(45deg, rgba(236, 237, 241, 0.8), rgba(238, 236, 241, 0.8), rgba(240, 236, 237, 0.8)), url(../../assets/geo1.jpg);
+  background: linear-gradient(45deg, rgba(236, 237, 241, 0.8), rgba(238, 236, 241, 0.8), rgba(240, 236, 237, 0.8)), url(../../assets/geo2.jpg);
   background-attachment: fixed;
   background-size: 50%;
   padding: 3rem 0 8rem 0;
@@ -625,12 +639,21 @@ header .headerButton:hover {
 }
 
 .blog .flexP .blogPost {
-  height: 22rem;
+  height: 25rem;
   background-color: white;
   padding: 1rem;
   width: 30%;
   -webkit-box-shadow: 2px 2px 20px #000;
           box-shadow: 2px 2px 20px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
 }
 
 .blog .flexP .blogPost:hover {
@@ -640,6 +663,36 @@ header .headerButton:hover {
           box-shadow: 1px 1px 3px #000;
   -webkit-transition: all 1s;
   transition: all 1s;
+}
+
+.blog .flexP .blogPost .blogInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.blog .flexP .blogPost .blogInfo h3 {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.blog .flexP .blogPost .blogInfo p {
+  font-size: 0.8rem;
+}
+
+.blog .flexP .blogPost .blogInfo button {
+  font-size: 1rem;
+}
+
+.blog .flexP .blogPost .blogInfo button a {
+  text-decoration: none;
+  color: black;
 }
 
 .blogImg {
@@ -740,7 +793,7 @@ form button:hover {
 }
 
 .copyright {
-  background-color: #000;
+  background-color: #2b4152;
   padding: 1rem;
 }
 
