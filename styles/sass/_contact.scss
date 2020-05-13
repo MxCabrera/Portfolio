@@ -91,6 +91,11 @@ form {
          font-family: 'Dancing Script', cursive;
          font-size: 2rem;
          text-decoration: underline;
+         &:hover {
+            color: red;
+            transform: scale(1.3);
+            text-shadow: 2px 2px 1px #000;
+         }
       }
    }
 }

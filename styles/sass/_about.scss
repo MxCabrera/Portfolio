@@ -4,7 +4,7 @@ html {
 
 .about {
    padding: 1rem 0 3rem 0;
-   // background-image: url(../../assets/subtle4.jpg);
+   // background-image: url(../../assets/subtle5.png);
    // background-size: 10%;
    h2 {
       font-family: 'Dancing Script', cursive;
@@ -14,8 +14,8 @@ html {
       width: 20%;
       float: left;
       shape-outside: circle(50%);
-      margin-right: 3.5rem;
-      margin-top: 1rem;
+      margin: 1rem 3.5rem 1.5rem 0;
+
       img {
          width: 100%;
          border-radius: 50%;
@@ -38,7 +38,8 @@ html {
    }
    p {
       font-size: 1.2rem;
-      span {
+      line-height: 1.4rem;
+      .frontend {
          font-family: 'Dancing Script', cursive;
          color: #2b4152;
          font-size: 2rem;
@@ -46,15 +47,45 @@ html {
          letter-spacing: 1.8px;
          text-shadow: 1px 1px 1px rgb(172, 24, 24);
       }
+      span {
+         letter-spacing: 1.3px;
+         font-weight: 700;
+         font-family: 'Dancing Script', cursive;
+         font-size: 1.6rem;
+
+         // color: black;
+      }
    }
+   h3 {
+      font-size: 1rem;
+      margin: 2rem 0;
+      .work {
+      background-color: rgb(172, 24, 24);
+      color: white;
+      text-shadow: 2px 2px 1px #000;
+      box-shadow: 5px 5px 10px #000;
+      padding: 0.6rem;
+      text-transform: uppercase;
+      margin-left: 1rem;
+   }
+}
    button {
-      padding: 0.5rem;
-      border-radius: 5px;
+      padding: 1rem 1rem 0.8rem 1rem;
+      box-shadow: 3px 3px 10px #000;
+      border-radius: 20px;
       float: right;
+      background-color: black;
+      color: white;
+
       a {
          text-decoration: none;
-         color: black;
-         font-size: 1rem;
+         font-size: 0.7rem;
+         text-transform: uppercase;
+         border-radius: none;
+         color: white;
+      }
+      &:hover {
+         background-color: rgb(172, 24, 24);
       }
    }
 }
