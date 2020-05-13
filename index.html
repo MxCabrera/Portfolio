@@ -44,13 +44,13 @@
       <main>
          <section id="about" class="about">
             <div class="wrapper">
-               <h2 class="section" data-aos="fade-up">About*</h2>
+               <h2 class="section" data-aos="fade-right">About*</h2>
                <div class="miguel" data-aos="fade-up">
                   <img src="./assets/headshot.png" alt="miguel">
                </div>
-               <p data-aos="fade-right" class="headshot">Hi, I'm Miguel Cabrera. </p>
+               <p data-aos="fade-left" class="headshot"><strong>Hi, I'm Miguel Cabrera.</strong> </p>
                <div data-aos="fade-up">
-                  <p>I am a front end developer with a passion for building and sketching. With a background in architectural technology and customer service, I am dedicated to my craft and aim to create websites that provide clients with great design, functionality and accessibility. Coding has allowed me to express my creativity while creating a sound structure to build with. I am excited to begin this new journey with a positive mindset and an open mind. When I'm not coding, on my spare time I enjoy trying new food, playing basketball, and spending time with my family and 2 dogs.
+                  <p>I am a <span>front end developer</span> with a passion for building and sketching. Graduated with a background in architectural technology and customer service, I am dedicated to my craft and aim to create websites that provide clients with great design, functionality and accessibility. Coding has allowed me to express my creativity while creating a sound structure to build with. I am excited to begin this new journey with a positive attitude and an open mindset. On my spare time when I'm not coding, I enjoy trying new food, watching tv series, playing basketball, and spending time with my family and two dogs Bo & Layla.
                   </p>
                   <button><a href="https://www.google.ca">Resume</a></button>
                </div>
@@ -59,13 +59,18 @@
 
 
          <section id="portfolio" class="projects" data-aos="fade-up">
+            <div class="projectNav">
+               <i class="fas fa-chevron-circle-up arrowU"></i>
+               <i class="fas fa-chevron-circle-down arrowD"></i>
+            </div>
             <div class="wrapper">
-               <h2 class="section">Portfolio*</h2>
+               <h2 class="section" data-aos="fade-right">Portfolio*</h2>
+
                <div class="projectContainer">
                   <aside class="project projectLink" data-aos="fade-right">
                   <div class="flex flexP">
                      <div class="projectImg" data-aos="flip-up">
-                        <img src="./assets/project7.JPG" alt="Breaking Down the Bad">
+                        <img src="./assets/projects7.png" alt="Breaking Down the Bad">
                      </div>
                      <div class="projectInfo flexC">
                         <h3>Breaking Down the Bad</h3>
@@ -86,6 +91,7 @@
                      </div>
                   </div>
                   </aside>
+
                   <aside class="project projectLink" data-aos="fade-left">
                      <div class="flex flexP">
                         <div class="projectInfo flexC">
@@ -98,48 +104,51 @@
                            </div>
                         </div>
                         <div class="projectImg" data-aos="flip-up">
-                           <img src="./assets/project2.JPG" alt="">
+                           <img src="./assets/projects2.png" alt="">
                         </div>
                      </div>
                   </aside>
+
                   <aside class="project projectLink" data-aos="fade-right">
                      <div class="flex flexP">
                         <div class="projectImg" data-aos="flip-up">
-                           <img src="./assets/project5.JPG" alt="">
+                           <img src="./assets/projects5.png" alt="Find out which NBA legend your personality ">
                         </div>
                         <div class="projectInfo">
                            <h3>Which G.O.A.T. are you?</h3>
-                           <p>An 8 question personality quiz, to determine with NBA legend your personality is linked closest too</p>
-                           <button><a href="">Live Link</a></button>
-                           <button><a href="">GitHub</a></button>
+                           <p>Find out which NBA legend your personality is linked closest to with this personality quiz.</p>
+                           <button><a href="https://mxcabrera.github.io/miguelCabreraProjectThree/">Live Link</a></button>
+                           <button><a href="https://github.com/MxCabrera/miguelCabreraProjectThree">GitHub</a></button>
                         </div>
                      </div>
                   </aside>
+
                   <aside class="project projectLink" data-aos="fade-left">
                      <div class="flex flexP">
                         <div class="projectInfo flexC">
                            <h3>Trivia TV</h3>
-                           <p>10 quiz randomly generated from data gathered from the Trivia API</p>
+                           <p>A quiz that generates 10 questions from data gathered from the Trivia API</p>
                            <div>
-                              <button><a href="">Live Link</a></button>
-                              <button><a href="">GitHub</a></button>
+                              <button><a href="https://alanandmiguelprojectfour.github.io/triviaApp/">Live Link</a></button>
+                              <button><a href="https://github.com/alanAndMiguelProjectFour/triviaApp">GitHub</a></button>
                            </div>
                         </div>
                         <div class="projectImg" data-aos="flip-up">
-                           <img src="./assets/project6.JPG" alt="">
+                           <img src="./assets/projects6.png" alt="">
                         </div>
                      </div>
                   </aside>
+
                   <aside class="project projectLink" data-aos="fade-right">
                         <div class="flex flexP">
                            <div class="projectImg" data-aos="flip-up">
-                              <img src="./assets/project8.JPG" alt="">
+                              <img src="./assets/projects8.png" alt="">
                            </div>
                            <div class="projectInfo">
                               <h3>Battle Rockets</h3>
-                              <p>A 2-player battleship style game. First one to guess all rockets before your opponent does</p>
-                              <button><a href="">Live Link</a></button>
-                              <button><a href="">GitHub</a></button>
+                              <p>A 2-player battleship style game. Destroy your opponents rockets before they do!</p>
+                              <button><a href="https://rocketbattle.github.io/battleRockets/">Live Link</a></button>
+                              <button><a href="https://github.com/rocketBattle/battleRockets">GitHub</a></button>
                            </div>
                         </div>
                   </aside>
@@ -147,9 +156,11 @@
             </div>
          </section>
 
-         <section id="skill" class="skills" data-aos="fade-down">
+
+
+         <section id="skill" class="skills" data-aos="fade-up">
             <div class="wrapper">
-               <h2 class="section" data-aos="fade-down">Skills*</h2>
+               <h2 class="section" data-aos="fade-right">Skills*</h2>
                <ul class="flex wrap">
                   <li><i class="fab fa-html5"></i>
                   <p>HTML5</p>
@@ -194,8 +205,9 @@
 
          <section id="blog" class="blog" data-aos="fade-down">
             <div class="wrapper">
-               <h2 class="section" data-aos="fade-down">Blogs*</h2>
+               <h2 class="section" data-aos="fade-right">Blogs*</h2>
                <div class="flex flexP">
+
                   <div class="blogPost" data-aos="fade-right">
                      <div class="blogImg">
                         <a href="https://medium.com/@mxcabrera/a-change-in-perception-9b034a252d37">
@@ -208,6 +220,8 @@
                         <button><a href="https://medium.com/@mxcabrera/a-change-in-perception-9b034a252d37">Check out my post</a></button>
                      </div>
                   </div>
+
+
                   <div class="blogPost" data-aos="fade-up">
                      <div class="blogImg">
                         <a href="https://medium.com/@mxcabrera/how-i-made-my-first-project-using-vanilla-javascript-c62151c60d01">
@@ -220,6 +234,8 @@
                         <button><a href="https://medium.com/@mxcabrera/how-i-made-my-first-project-using-vanilla-javascript-c62151c60d01">Check out my post</a></button>
                      </div>
                   </div>
+
+
                   <div class="blogPost" data-aos="fade-left">
                      <div class="blogImg">  
                         <a href="https://medium.com/@mxcabrera/send-multiple-requests-for-data-with-axios-all-3589a5390037">
@@ -244,13 +260,14 @@
                <div class="wrapper flex flexP">
                   <div class="contactImg" data-aos="fade-right">
                      <img src="assets/nikita-kachanovsky-OVbeSXRk_9E-unsplash.jpg" alt="computer">
-                     <div>
+                     <div data-aos="fade-right">
+                        <p>I'd love to talk with you and discuss the endless possibilities of the projects you desire! Please message me if you have any questions or topics of discussion.</p>
                         <p>Thanks for stopping by!</p>
                         <p>You can also reach me at: <span>migueledward@hotmail.com</span></p>
                      </div>
                   </div>
                   <aside class="contactInfo flexC" data-aos="fade-left">
-                     <h2 class="section">Contacts*</h2>
+                     <h2 class="section" data-aos="fade-right">Contacts*</h2>
                      <nav class="contactNav">
                         <ul class="flex">
                            <li><a href="https://twitter.com/mxcabreracodes"><i class="fab fa-twitter"></i></a></li>
@@ -282,9 +299,37 @@
             </section>
          </div>
          <div class="copyright">
-            <p>Copyright Miguel Cabrera 2020</p>
+            <p>Coded and Designed by Miguel Cabrera © 2020</p>
          </div>
       </footer>
+      <div class="bodyz">
+         <h1>CSS Box Hover Effect</h1>
+         <h3>Best viewed on a tablet or desktop screens. Total responsiveness is still to be desired.</h3>
+         <div class="quotes">
+            <div class="card">
+               <div class="box box1">
+                  <p>The first step toward success is taken when you refuse to be a captive of the environment in which you first
+                     find yourself. </p>
+                  <h2>Mark Caine</h2>
+               </div>
+               <div class="bg"></div>
+            </div>
+            <div class="card">
+               <div class="box box2">
+                  <p>Your smile will give you a positive countenance that will make people feel comfortable around you. </p>
+                  <h2>Les Brown</h2>
+               </div>
+               <div class="bg"></div>
+            </div>
+            <div class="card">
+               <div class="box box3">
+                  <p>Before anything else, preparation is the key to success. </p>
+                  <h2>Alexander Graham Bell</h2>
+               </div>
+               <div class="bg"></div>
+            </div>
+         </div>
+      </div>
    </div>
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
    <script src="your_path/choreographer.min.js"></script>
