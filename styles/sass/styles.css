@@ -362,6 +362,7 @@ header .headerButton:hover {
 
 .logoContainer .logo img {
   margin-top: -0.5rem;
+  margin-left: 1rem;
   width: 100%;
 }
 
@@ -453,6 +454,7 @@ header .headerButton:hover {
 .about button {
   padding: 0.5rem;
   border-radius: 5px;
+  float: right;
 }
 
 .about button a {
@@ -504,6 +506,7 @@ header .headerButton:hover {
   background-size: 92%;
   padding: 3rem 0 5rem 0;
   position: relative;
+  margin-top: 2rem;
 }
 
 .projects .projectNav {
@@ -679,13 +682,7 @@ header .headerButton:hover {
   font-size: 3rem;
 }
 
-.blog .flexP {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.blog .flexP .blogPost {
+.blog .blogPost {
   height: 28rem;
   background-color: white;
   padding: 1rem;
@@ -703,7 +700,7 @@ header .headerButton:hover {
       align-content: space-between;
 }
 
-.blog .flexP .blogPost:hover {
+.blog .blogPost:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   -webkit-box-shadow: 1px 1px 3px #000;
@@ -712,7 +709,7 @@ header .headerButton:hover {
   transition: all 1s;
 }
 
-.blog .flexP .blogPost .blogInfo {
+.blog .blogPost .blogInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -724,20 +721,20 @@ header .headerButton:hover {
       align-content: space-between;
 }
 
-.blog .flexP .blogPost .blogInfo h3 {
+.blog .blogPost .blogInfo h3 {
   font-size: 1.1rem;
   text-align: center;
 }
 
-.blog .flexP .blogPost .blogInfo p {
+.blog .blogPost .blogInfo p {
   font-size: 0.8rem;
 }
 
-.blog .flexP .blogPost .blogInfo button {
+.blog .blogPost .blogInfo button {
   font-size: 1rem;
 }
 
-.blog .flexP .blogPost .blogInfo button a {
+.blog .blogPost .blogInfo button a {
   text-decoration: none;
   color: black;
 }
@@ -868,7 +865,6 @@ form button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -892,7 +888,7 @@ form button:hover {
   width: 25vw;
   height: 50vh;
   min-height: 320px;
-  background: #f2f2f2;
+  background: #ffffff;
   overflow: hidden;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
@@ -969,23 +965,23 @@ form button:hover {
 .quotes .box.box1:hover ~ .bg {
   opacity: 1;
   background: #e2a9e5;
-  background: linear-gradient(135deg, #e2a9e5 15%, #2b94e5 100%);
+  background: linear-gradient(135deg, #aa8a8e 5%, #4b7596 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2a9e5', endColorstr='#2b94e5',GradientType=1 );
 }
 
 .quotes .box.box2:hover,
 .quotes .box.box2:hover ~ .bg {
   opacity: 1;
-  background: #632c65;
-  background: linear-gradient(135deg, #632c65 15%, #56a5e2 100%);
+  background: #a8b2b9;
+  background: linear-gradient(135deg, #aa8a8e 10%, #4b7596 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#632c65', endColorstr='#56a5e2',GradientType=1 );
 }
 
 .quotes .box.box3:hover,
 .quotes .box.box3:hover ~ .bg {
   opacity: 1;
-  background: #4b384c;
-  background: linear-gradient(135deg, #4b384c 15%, #da5de2 100%);
+  background: #afbec9;
+  background: linear-gradient(135deg, #aa8a8e 10%, #4b7596 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b384c', endColorstr='#da5de2',GradientType=1 );
 }
 /*# sourceMappingURL=styles.css.map */

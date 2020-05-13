@@ -17,7 +17,7 @@ header {
    .headerTitle {
       width: 75%;
       margin: 0 auto;
-      text-shadow: 10px 10px 1px #fff;
+      text-shadow: 10px 10px 1px #fff; 
       h1 {
          font-size: 5rem;
          text-align: center;
@@ -54,6 +54,7 @@ header {
       height: 100px;
       img {
          margin-top: -0.5rem;
+         margin-left: 1rem;
          width: 100%;
       }
    }
