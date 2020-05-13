@@ -1,0 +1,44 @@
+.skills {
+   padding: 3rem 0 8rem 0;
+   h2 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3rem;
+   }
+   .wrap {
+      flex-wrap: wrap;
+      margin: 0 auto;
+      border: 5px dashed black;
+      background-color: rgb(231, 228, 228);
+      justify-content: space-between;
+      li{
+         color: rgb(19, 50, 97);
+         list-style: none;
+         width: 25%;
+         text-align: center;
+         margin: 1rem 0 0.5rem 0;
+         padding: 0.5rem;
+         &:hover {
+            transform: scale(1.2);
+            transition: all 1.3s;
+            color: black;
+         }
+         p {
+            display: none;
+         }
+         i {
+            font-size: 4.5rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            &:hover + p {
+               transition: all 1.3s;
+               display: block;
+               margin-top: 0rem;
+               margin-bottom: 0;
+            }
+         }
+         .jquery {
+            margin-top: 1rem;
+         }
+      }
+   }
+}
