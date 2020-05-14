@@ -3,7 +3,6 @@ const app = {};
 
 app.isPlaying = undefined;
 
-
 // arrow buttons to scroll to top or bottom of page
 $('.arrowU').on('click', function(){
    window.scrollTo(0,0);

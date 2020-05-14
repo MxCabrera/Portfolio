@@ -35,6 +35,9 @@ header {
          margin-bottom: 1rem;
          font-family: 'Poppins', sans-serif;
          font-weight: 600;
+         &:hover {
+            transform: scale(1.3);
+         }
          // &:hover .headerButton {
          //    transform: scale(1.5);
          //    transition: all 1s;
