@@ -27,10 +27,30 @@ $('.headerButton').on('click', function() {
    };
 });
 
-
+// const Choreographer = require('choreographer-js')
+// console.log(Choreographer)
 
 
 $(document).ready(function () {
+   let choreographer = new Choreographer({
+      animations: [
+      {
+         range: [-1, 1000],
+         selector: '#box',
+         type: 'scale',
+         style: 'opacity',
+         from: 0,
+         to: 1
+      }
+   ]})
+   choreographer.runAnimationsAt(position)
+   
+   window.addEventListener('scroll', function () {
+      choreographer.runAnimationsAt(window.pageYOffset)
+   })
+   console.log(KUTE);
+   // var tween = KUTE.fromTo('headerTitle', { left: 0 }, { left: 100 }, { yoyo: true });
+   // console.log(tween);
    // Add smooth scrolling to all links
    $("a").on('click', function (event) {
       // Make sure this.hash has a value before overriding default behavior

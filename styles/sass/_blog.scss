@@ -3,8 +3,8 @@
    background: linear-gradient(45deg, rgba(236, 237, 241, 0.8), rgba(238, 236, 241, 0.8), rgba(240, 236, 237, 0.8)), url(../../assets/geo2.jpg);
    background-attachment: fixed;
    background-size: 50%;
-   border: 1px solid black;
-   padding: 3rem 0 8rem 0;
+   padding: 0rem 0 8rem 0;
+   z-index: -1;
    h2 {
       font-family: 'Dancing Script', cursive;
       font-size: 3rem;
@@ -171,3 +171,9 @@
       }
    }
 }
+
+   .spacing {
+      margin-top: -3rem;
+   }
+
+   
