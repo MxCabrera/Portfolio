@@ -8,3 +8,38 @@
       font-size: 1.1rem;
    }
 }
+
+.bigWrapper,
+.wrapperzz {
+  box-sizing: border-box;
+	cursor: url('https://i.ibb.co/6bycCv7/Ellipse-4.png'), default;	
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.bigWrapper {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+	background-color: #030302;
+}
+
+.bigWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapperzz {
+	display: grid;
+	grid-template-columns: repeat(9, 40px);
+	grid-template-rows: repeat(7, 40px);
+	grid-gap: 1.5rem;
+	
+	.item { background-color: #FECE00; }
+}
+
+
