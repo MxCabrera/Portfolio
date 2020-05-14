@@ -20,20 +20,35 @@
       <!-- header begins here  -->
       <header class="flexC">
          <nav class="titleNav flex">
-            <div class="logoContainer">               
-               <div class="logo">
-                  <img src="./assets/logo.png" alt="where is it">
-               </div>
-            </div>
-
+            
             <!-- title menu nav  -->
-            <ul class="flex menu">
-               <li><a href="#about">About</a></li>|
-               <li><a href="#portfolio">Portfolio</a></li>|
-               <li><a href="#skill">Skills</a></li>|
-               <li><a href="#contact">Contact</a></li>|
-               <li><a href="#blog">Blog</a></li>
-            </ul>
+            <div class="topnav flex">
+               <div class="logoContainer">               
+                  <div class="logo">
+                     <img src="./assets/logo.png" alt="where is it">
+                  </div>
+               </div>
+               <div id="myLinks" class="flexNav">
+                  <li>
+                     <a href="#about">About</a>
+                  </li>
+                  <li>
+                     <a href="#contact">Portfolio</a>
+                  </li>
+                  <li>
+                     <a href="#skills">Skills</a>
+                  </li>
+                  <li>
+                     <a href="#blog">Blog</a>
+                  </li>
+                  <li>
+                     <a href="#contact">Contact</a>
+                  </li>
+               </div>
+               <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+               </a>
+            </div>
          </nav>
          <!-- title landing page -->
          <div class="headerTitle flexC">
@@ -102,7 +117,7 @@
                            <i class="fab fa-github"></i>
                            <i class="fas fa-laptop"></i>
                         </div> -->
-                        <p>Informational Soundboard Generator</p>
+                        <p>Informational Soundboard Generator that randomly select 3 quotes from each Character from Vince Gilligan's Breaking Bad, using the Breaking Bad API</p>
                         <div>
                            <button><a href="https://mxcabrera.github.io/miguel-cabrera-project-5/">Live Link</a></button>
                            <button><a href="https://github.com/MxCabrera/miguel-cabrera-project-5">GitHub</a></button>
@@ -141,7 +156,7 @@
                         </div>
                         <div class="projectInfo">
                            <h3>Which G.O.A.T. are you?</h3>
-                           <p>Find out which NBA legend your personality is linked closest to with this personality quiz.</p>
+                           <p>The Greatest of All Time. Find out which NBA legend your personality is linked closest to with this personality quiz. Created using Vanilla JavaScript</p>
                            <button><a href="https://mxcabrera.github.io/miguelCabreraProjectThree/">Live Link</a></button>
                            <button><a href="https://github.com/MxCabrera/miguelCabreraProjectThree">GitHub</a></button>
                         </div>
@@ -155,7 +170,7 @@
                      <div class="flex flexP">
                         <div class="projectInfo flexC">
                            <h3>Trivia TV</h3>
-                           <p>A quiz that generates 10 questions from data gathered from the Trivia API</p>
+                           <p>Do you know your TV facts? Try this quiz that generates 10 random questions gathered from the Trivia API. Score well, a gif is given based on the  amount you get right!</p>
                            <div>
                               <button><a href="https://alanandmiguelprojectfour.github.io/triviaApp/">Live Link</a></button>
                               <button><a href="https://github.com/alanAndMiguelProjectFour/triviaApp">GitHub</a></button>
@@ -177,7 +192,7 @@
                            </div>
                            <div class="projectInfo">
                               <h3>Battle Rockets</h3>
-                              <p>A 2-player battleship style game. Destroy your opponents rockets before they do!</p>
+                              <p>A 2-player battleship-style game. Destroy your opponents rockets before they do! Take turns between your friend and each hit displays info from the SpaceX API. </p>
                               <button><a href="https://rocketbattle.github.io/battleRockets/">Live Link</a></button>
                               <button><a href="https://github.com/rocketBattle/battleRockets">GitHub</a></button>
                            </div>
@@ -329,11 +344,10 @@
                                     </a>
                                  </div>
                                  <div class="blogInfo">
-                                    <h3>Change of Perception</h3>
-                                    <p>Intro to my life before Code</p>
+                                    <h3>A Change of Perception</h3>
+                                    <p>Intro to my life before code, and how I got to where I am today.</p>
                                     <button>
-                                       <a href="https://medium.com/@mxcabrera/a-change-in-perception-9b034a252d37">Check out my
-                                          post</a>
+                                       <a href="https://medium.com/@mxcabrera/a-change-in-perception-9b034a252d37">Click here</a>
                                        </button>
                                  </div>
                               </div>
@@ -345,19 +359,16 @@
                            <div class="card" data-aos="fade-up">
                               <div class="box box2">
                                  <div class="blogImg">
-                                    <a
-                                       href="https://medium.com/@mxcabrera/how-i-made-my-first-project-using-vanilla-javascript-c62151c60d01">
+                                    <a href="https://medium.com/@mxcabrera/how-i-made-my-first-project-using-vanilla-javascript-c62151c60d01">
                                        <img src="assets/vanilla.jpeg" alt="vanilla icecream">
                                     </a>
                                  </div>
                                  <div class="blogInfo">
-                                    <h3>Creating first project in Vanilla JavaScript</h3>
-                                    <p>Details about how my experience was with JavaScript and the initial struggle between separating
-                                       jQuery.</p>
+                                    <h3>1st project in Vanilla JavaScript</h3>
+                                    <p>Details about my experience using only Vanilla JavaScript for my Project </p>
                                     <button>
                                        <a
-                                          href="https://medium.com/@mxcabrera/how-i-made-my-first-project-using-vanilla-javascript-c62151c60d01">Check
-                                          out my post</a>
+                                          href="https://medium.com/@mxcabrera/how-i-made-my-first-project-using-vanilla-javascript-c62151c60d01">Click here</a>
                                        </button>
                                  </div>
                               </div>
@@ -374,13 +385,11 @@
                                     </a>
                                  </div>
                                  <div class="blogInfo">
-                                    <h3>Grab all the data using an Axios.all( )</h3>
-                                    <p>Basic lesson on the axios.all method which utilizes all data in an API</p>
+                                    <h3>Grab data using Axios.all( )</h3>
+                                    <p>Basic lesson on the axios.all method which utilizes all data in an API I chose.</p>
                                     <button>
                                        <a
-                                          href="https://medium.com/@mxcabrera/send-multiple-requests-for-data-with-axios-all-3589a5390037">Check
-                                          out
-                                          my post</a>
+                                          href="https://medium.com/@mxcabrera/send-multiple-requests-for-data-with-axios-all-3589a5390037">Click here</a>
                                        </button>
                                  </div>
                               </div>

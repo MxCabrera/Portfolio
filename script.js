@@ -1,7 +1,10 @@
+// name spacing object
 const app = {};
 
 app.isPlaying = undefined;
 
+
+// arrow buttons to scroll to top or bottom of page
 $('.arrowU').on('click', function(){
    window.scrollTo(0,0);
 });
@@ -10,6 +13,8 @@ $('.arrowD').on('click', function(){
    window.scrollTo(0, 100000);
 });
 
+
+// play audio when header button is clicked
 
 $('.headerButton').on('click', function() {
    window.scrollTo(0,800);
@@ -22,6 +27,8 @@ $('.headerButton').on('click', function() {
       audio.play();
    };
 });
+
+
 
 
 $(document).ready(function () {
@@ -56,22 +63,28 @@ console.log('hey');
 
 document.addEventListener('mousemove', (e) => {
    const sqrs = document.querySelectorAll('.item');
-
    const mouseX = e.pageX;
    const mouseY = e.pageY;
 
    sqrs.forEach(sqr => {
       const sqrX = sqr.offsetLeft + 20;
       const sqrY = sqr.offsetTop + 20;
-
       const diffX = mouseX - sqrX;
       const diffY = mouseY - sqrY;
-
       const radians = Math.atan2(diffY, diffX);
-
       const angle = radians * 180 / Math.PI;
-
       sqr.style.transform = `rotate(${angle}deg)`;
    })
-
 })
+
+
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+   var x = document.getElementById("myLinks");
+   if (x.style.display === "none") {
+      x.style.display = "flex";
+   } else {
+      x.style.display = "none";
+   }
+} 

@@ -294,7 +294,7 @@ body {
 .section {
   border-bottom: 5px solid #2b4152;
   width: 10rem;
-  text-shadow: 2px 2px 1px #fff;
+  text-shadow: 5px 5px 1px #fff;
 }
 
 header {
@@ -312,6 +312,14 @@ header .titleNav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+}
+
+header .titleNav li a {
+  float: left;
+}
+
+header .titleNav a .icon {
+  float: right;
 }
 
 header .headerTitle {
@@ -398,6 +406,59 @@ header .headerButton:hover {
   color: #b1b0b0;
 }
 
+.topnav {
+  overflow: hidden;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+.topnav a.icon {
+  float: right;
+  font-size: 2rem;
+}
+
+.flexNav {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flexNav li a::after {
+  content: '*';
+  color: rgba(0, 0, 0, 0);
+}
+
+.flexNav li:hover a {
+  color: grey;
+  text-decoration: underline;
+}
+
+.flexNav li:hover a::after {
+  content: '*';
+  color: red;
+}
+
 html {
   color: black;
 }
@@ -436,7 +497,7 @@ html {
   width: 30%;
   font-weight: 700;
   color: white;
-  text-shadow: 2px 2px 1px #000;
+  text-shadow: 1px 1px 4px #000;
 }
 
 .about p {
@@ -624,7 +685,7 @@ html {
 
 .project .flexP .projectInfo h3 {
   font-size: 2.3rem;
-  margin: 0;
+  margin: 0 0 1rem 0;
   color: white;
   text-shadow: 5px 5px 1px #2b4152;
 }
@@ -638,6 +699,7 @@ html {
   padding: 0.8rem;
   background-color: black;
   border-radius: none;
+  margin-top: 2rem;
 }
 
 .project .flexP .projectInfo button a {
@@ -673,7 +735,7 @@ html {
   font-family: "Josefin Slab";
   background-color: white;
   border: 0.4rem dashed #000;
-  padding: 1rem;
+  padding: 2rem;
   width: 100%;
 }
 
@@ -740,6 +802,8 @@ html {
 .product:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 .product:hover .effect-1,
@@ -881,7 +945,6 @@ html {
 
 .bodyz .quotes {
   width: 80vw;
-  min-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -910,8 +973,7 @@ html {
 .bodyz .quotes .box {
   position: relative;
   width: 25vw;
-  height: 50vh;
-  min-height: 320px;
+  height: 30rem;
   background: #ffffff;
   overflow: hidden;
   -webkit-transition: all 0.5s ease-in;
@@ -1023,16 +1085,31 @@ html {
 }
 
 .blogInfo p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .blogInfo button {
   font-size: 1rem;
+  width: 50%;
+  margin: 3rem auto 0 auto;
+  border-radius: 2.5rem;
+  padding: 0.5rem;
 }
 
 .blogInfo button a {
   text-decoration: none;
   color: black;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.blogInfo button:hover {
+  background-color: #4b4a4a;
+}
+
+.blogInfo button:hover a {
+  color: white;
 }
 
 .contact {
@@ -1122,6 +1199,9 @@ form button {
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
   letter-spacing: 1.6px;
+  background-color: black;
+  margin-top: 1.5rem;
+  color: white;
 }
 
 form button:hover {

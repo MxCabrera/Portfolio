@@ -9,11 +9,21 @@ header {
       width: 100%;
       background-color: white;
       border: 1px solid black;
-      // border-bottom: 1px solid black;
       // background-color: rgb(223, 223, 209);
       position: sticky;
       top: 0;
+      li a {
+         float: left;
+      }
+      a .icon {
+         float: right;
+      }
    }
+
+   // .titleNav #myLinks {
+   //    display:none;
+   // }
+
    .headerTitle {
       width: 75%;
       margin: 0 auto;
@@ -91,4 +101,51 @@ header {
       }
    }
 
+}
+
+
+.topnav {
+  overflow: hidden;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  justify-content: space-between;
+}
+
+// .topnav #myLinks {
+// }
+
+.topnav a {
+  float: left;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+.topnav a.icon {
+  float: right;
+  font-size: 2rem;
+}
+
+
+.flexNav {
+   width: 80%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   li a::after {
+      content: '*';
+      color: rgba(0,0,0,0);
+   }
+   li:hover a {
+      color: grey;
+      text-decoration: underline;
+      // font-weight: 600;
+      &::after {
+         content: '*';
+         color: red;
+      }
+   }
 }

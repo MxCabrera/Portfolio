@@ -47,7 +47,7 @@
    font-family: "Josefin Slab";
    background-color: white;
    border: 0.4rem dashed #000;
-   padding: 1rem;
+   padding: 2rem;
    width: 100%;
    .container {
       display: flex;
@@ -104,6 +104,7 @@
 
 .product:hover {
    transform: scale(1.2);
+   transition: all 0.6s;
 }
 
 .product:hover .effect-1,
