@@ -1945,6 +1945,9 @@ form button:hover {
   header .svg {
     bottom: -4.3rem;
   }
+  header .headerTitle {
+    text-shadow: 4px 4px 1px #fff;
+  }
   header .topnav .flexNav {
     width: 55%;
     -ms-flex-wrap: wrap;
@@ -1997,6 +2000,9 @@ form button:hover {
     font-size: 3.5rem;
     width: 85%;
     left: 8%;
+  }
+  header .svg {
+    display: none;
   }
   .about .headshot {
     width: 95%;

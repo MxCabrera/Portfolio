@@ -528,6 +528,9 @@
       .svg {
          bottom: -4.3rem;
       }
+      .headerTitle {
+         text-shadow: 4px 4px 1px #fff; 
+      }
    }
    header .topnav .flexNav {
       width: 55%;
@@ -575,6 +578,7 @@
       right: 2rem;
       bottom: 8.5rem;
    }
+   
 }
 
 @media (max-width: 425px) {
@@ -582,6 +586,9 @@
       font-size: 3.5rem;
       width: 85%;
       left: 8%;
+   }
+   header .svg {
+      display: none;
    }
    .about .headshot {
       width: 95%;
@@ -598,6 +605,7 @@
    .smear4 {
       top: 129rem;
    }
+   
 }
 
 
