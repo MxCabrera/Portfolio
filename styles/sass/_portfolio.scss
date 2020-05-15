@@ -47,10 +47,10 @@
       justify-content: space-between;
       .projectImg {
          width: 47%;
-         border: 1rem solid rgb(39,39,39);
-         background-color: white;
+         // border: 1rem solid rgb(39,39,39);
+         // background-color: white;
          // border-radius: 10px; 
-         box-shadow: 2px 2px 10px #000;
+         // box-shadow: 2px 2px 10px #000;
          img {
             width: 100%;
          }
@@ -67,6 +67,7 @@
          h3,
          p {
             width: 100%;
+            z-index: 1000;
          }
          h3 {
             font-size: 2.3rem;
@@ -77,12 +78,14 @@
          p {
             font-size: 1.3rem;
             margin:0;
+            z-index: 1000;
          }
          button {
             padding: 0.8rem;
             background-color: black;
             border-radius: none;
             margin-top: 2rem;
+            z-index: 1000;
             a {
                color: white; 
                text-decoration: none;
@@ -102,6 +105,10 @@
    
 }
 
+.goat {
+   z-index: 1000;
+}
+
 .projectLink {
    width: 100%;
 }
@@ -110,4 +117,62 @@
    position:absolute; 
    bottom: -6rem;
    z-index: 1000;
+}
+
+.smear {
+   width: 20%;
+   position: absolute;
+   right: 3rem;
+   top: 39rem;
+   transform: rotate(-25deg);
+   img {
+      width: 100%;
+   }
+}
+
+.smear2 {
+   width: 20%;
+   position: absolute;
+   left: 3rem;
+   top: 64rem;
+   transform: rotate(-155deg);
+   img {
+      width: 100%;
+   }
+}
+
+
+.smear3 {
+   width: 20%;
+   position: absolute;
+   right: 3.5rem;
+   top: 95rem;
+   transform: rotate(-25deg);
+   z-index: 999;
+   img {
+      width: 100%;
+   }
+}
+
+.smear4 {
+   width: 20%;
+   position: absolute;
+   left: 3rem;
+   top: 120rem;
+   transform: rotate(-155deg);
+   img {
+      width: 100%;
+   }
+}
+
+.smear5 {
+   width: 20%;
+   position: absolute;
+   right: 4.5rem;
+   bottom: 13rem;
+   transform: rotate(-25deg);
+   z-index: 999;
+   img {
+      width: 100%;
+   }
 }

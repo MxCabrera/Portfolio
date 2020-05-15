@@ -299,7 +299,6 @@ body {
 
 header {
   height: 800px;
-  border: 1px solid black;
   background: linear-gradient(135deg, rgba(83, 83, 83, 0.9), rgba(119, 119, 119, 0.9), rgba(238, 236, 236, 0.9), rgba(160, 158, 158, 0.9), rgba(53, 53, 53, 0.9)), url(../../assets/subtle5.png);
   background-attachment: fixed;
   background-size: 200%;
@@ -323,6 +322,20 @@ header .titleNav a .icon {
   float: right;
 }
 
+header .titleNav .myContact {
+  background-color: #e7e6e6;
+}
+
+header .titleNav .myContact:hover {
+  background-color: #c4c3c3;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+header .titleNav .myContact:hover a {
+  text-decoration: none;
+}
+
 header .svg {
   position: absolute;
   bottom: -1.3rem;
@@ -335,12 +348,16 @@ header .headerTitle {
 }
 
 header .headerTitle h1 {
-  width: 100%;
+  width: 70%;
   font-size: 5rem;
-  text-align: center;
-  margin: 12rem auto 0rem auto;
+  text-align: left;
+  margin: 3rem 0 0 rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
+  position: absolute;
+  bottom: 50%;
+  left: 25%;
+  z-index: 1000;
 }
 
 header .headerTitle h2 {
@@ -348,6 +365,10 @@ header .headerTitle h2 {
   font-size: 2.5rem;
   font-family: 'Dancing Script', cursive;
   margin: 2rem 0 10rem 0;
+  position: absolute;
+  bottom: 30%;
+  left: 40%;
+  z-index: 1000;
 }
 
 header .headerButton {
@@ -360,8 +381,8 @@ header .headerButton {
 
 header .headerButton:hover {
   color: white;
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
   text-shadow: 1px 1px 10px #c7c5c5;
 }
 
@@ -481,6 +502,64 @@ header .headerButton:hover {
   color: red;
 }
 
+.budy {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: url("https://i.ibb.co/6bycCv7/Ellipse-4.png"), default;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.budy {
+  height: 30%;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+}
+
+.budy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapperS {
+  margin: 10rem 0 0 14.1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (40px)[7];
+      grid-template-columns: repeat(7, 40px);
+  -ms-grid-rows: (40px)[7];
+      grid-template-rows: repeat(7, 40px);
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  grid-gap: 2rem;
+}
+
+.itemz {
+  background-color: #f0f0e5;
+}
+
+.head {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.separate {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
 html {
   color: black;
 }
@@ -498,7 +577,7 @@ html {
   width: 20%;
   float: left;
   shape-outside: circle(50%);
-  margin: 1rem 3.5rem 1.5rem 0;
+  margin: 1rem 2rem 1rem 0;
 }
 
 .about .miguel img {
@@ -512,40 +591,41 @@ html {
 .about .headshot {
   overflow: hidden;
   border-right: .15em solid #2b4152;
+  font-family: 'Montserrat', sans-serif;
   white-space: nowrap;
   letter-spacing: .15rem;
   -webkit-animation: typing 3.5s steps(25, end), blink-caret 1s step-end infinite;
           animation: typing 3.5s steps(25, end), blink-caret 1s step-end infinite;
   width: 30%;
   font-weight: 700;
-  color: white;
-  text-shadow: 1px 1px 4px #000;
+  color: #2b4152;
+  text-shadow: 4px 4px 1px #b8b7b7;
 }
 
 .about p {
   font-size: 1.2rem;
   line-height: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .about p .frontend {
-  font-family: 'Dancing Script', cursive;
   color: #2b4152;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  letter-spacing: 1.8px;
-  text-shadow: 1px 1px 1px #ac1818;
+  letter-spacing: 1.2px;
+  text-shadow: 3px 3px 1px #a09e9e;
 }
 
 .about p span {
   letter-spacing: 1.3px;
-  font-weight: 700;
-  font-family: 'Dancing Script', cursive;
-  font-size: 1.6rem;
+  font-weight: 500;
+  font-size: 1.3rem;
 }
 
 .about h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 2rem 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .about h3 .work {
@@ -677,10 +757,6 @@ html {
 
 .project .flexP .projectImg {
   width: 47%;
-  border: 1rem solid #272727;
-  background-color: white;
-  -webkit-box-shadow: 2px 2px 10px #000;
-          box-shadow: 2px 2px 10px #000;
 }
 
 .project .flexP .projectImg img {
@@ -701,6 +777,7 @@ html {
 .project .flexP .projectInfo h3,
 .project .flexP .projectInfo p {
   width: 100%;
+  z-index: 1000;
 }
 
 .project .flexP .projectInfo h3 {
@@ -713,6 +790,7 @@ html {
 .project .flexP .projectInfo p {
   font-size: 1.3rem;
   margin: 0;
+  z-index: 1000;
 }
 
 .project .flexP .projectInfo button {
@@ -720,6 +798,7 @@ html {
   background-color: black;
   border-radius: none;
   margin-top: 2rem;
+  z-index: 1000;
 }
 
 .project .flexP .projectInfo button a {
@@ -738,6 +817,10 @@ html {
   color: black;
 }
 
+.goat {
+  z-index: 1000;
+}
+
 .projectLink {
   width: 100%;
 }
@@ -746,6 +829,73 @@ html {
   position: absolute;
   bottom: -6rem;
   z-index: 1000;
+}
+
+.smear {
+  width: 20%;
+  position: absolute;
+  right: 3rem;
+  top: 39rem;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+
+.smear img {
+  width: 100%;
+}
+
+.smear2 {
+  width: 20%;
+  position: absolute;
+  left: 3rem;
+  top: 64rem;
+  -webkit-transform: rotate(-155deg);
+          transform: rotate(-155deg);
+}
+
+.smear2 img {
+  width: 100%;
+}
+
+.smear3 {
+  width: 20%;
+  position: absolute;
+  right: 3.5rem;
+  top: 95rem;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  z-index: 999;
+}
+
+.smear3 img {
+  width: 100%;
+}
+
+.smear4 {
+  width: 20%;
+  position: absolute;
+  left: 3rem;
+  top: 120rem;
+  -webkit-transform: rotate(-155deg);
+          transform: rotate(-155deg);
+}
+
+.smear4 img {
+  width: 100%;
+}
+
+.smear5 {
+  width: 20%;
+  position: absolute;
+  right: 4.5rem;
+  bottom: 13rem;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  z-index: 999;
+}
+
+.smear5 img {
+  width: 100%;
 }
 
 .skills {
@@ -800,12 +950,12 @@ html {
 .product .effect-1 {
   -webkit-animation: rotate 1.8s linear infinite;
           animation: rotate 1.8s linear infinite;
-  background: #0099ff;
+  background: #2b4152;
 }
 
 .product .effect-2 {
   animation: rotate 1.2s linear reverse infinite;
-  background: #ff004c;
+  background: #c44242;
 }
 
 .product .content {
@@ -901,7 +1051,7 @@ html {
 }
 
 .content:hover div i {
-  color: red;
+  color: #c44242;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -936,8 +1086,8 @@ html {
   background: linear-gradient(45deg, rgba(236, 237, 241, 0.8), rgba(238, 236, 241, 0.8), rgba(240, 236, 237, 0.8)), url(../../assets/geo2.jpg);
   background-attachment: fixed;
   background-size: 50%;
-  padding: 0rem 0 8rem 0;
-  z-index: -1;
+  padding: 0rem 0 12rem 0;
+  z-index: -10000;
 }
 
 .blog h2 {
@@ -963,10 +1113,6 @@ html {
           align-items: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.bodyz .card {
-  border: 0.5px solid #7c7c7c;
 }
 
 .bodyz .quotes {
@@ -1072,7 +1218,7 @@ html {
 .quotes .box.box2:hover ~ .bg {
   opacity: 1;
   background: #a8b2b9;
-  background: linear-gradient(45deg, #bb6771 5%, #4b7596 100%);
+  background: linear-gradient(45deg, #aa8a8e 5%, #4b7596 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#632c65', endColorstr='#56a5e2',GradientType=1 );
 }
 
@@ -1142,9 +1288,13 @@ html {
   margin-top: -3rem;
 }
 
+.miggy {
+  margin-top: -10rem;
+}
+
 .contact {
   padding: 1rem 0;
-  margin: 2rem auto;
+  margin: -4rem auto 2rem auto;
 }
 
 .contact .flexP {

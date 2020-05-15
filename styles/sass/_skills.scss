@@ -76,12 +76,12 @@
    }
    .effect-1 {
       animation: rotate 1.8s linear infinite;
-      background: rgb(0, 153, 255);
+      background: #2b4152;
    }
 
    .effect-2 {
       animation: rotate 1.2s linear reverse infinite;
-      background: #ff004c;
+      background: rgb(196, 66, 66);
    }
    .content {
       background: white;
@@ -186,7 +186,7 @@
 // }
 
 .content:hover div i {
-   color:red;
+   color:rgb(196, 66, 66);
    transition: all 1s;
 }
 

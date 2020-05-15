@@ -81,7 +81,7 @@ console.log('hey');
 // header logo animation
 
 document.addEventListener('mousemove', (e) => {
-   const sqrs = document.querySelectorAll('.item');
+   const sqrs = document.querySelectorAll('.itemz');
    const mouseX = e.pageX;
    const mouseY = e.pageY;
 
