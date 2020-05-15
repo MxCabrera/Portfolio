@@ -1,15 +1,11 @@
 
 
 .projects {
-   // background: linear-gradient(135deg, rgba(83, 83, 83, 0.9), rgba(119, 119, 119, 0.9), rgba(238, 236, 236, 0.9), rgba(160, 158, 158, 0.9), rgba(53, 53, 53, 0.9));
-   // background: linear-gradient(135deg, rgba(83, 83, 83, 0.9), rgba(119, 119, 119, 0.9), rgba(238, 236, 236, 0.9)), url(../../assets/geo2.jpg);
    background: linear-gradient(135deg, rgba(204, 204, 204, 0.9), rgba(207, 207, 207, 0.9), rgba(238, 236, 236, 0.9)), url(../../assets/subtle5.png);
-   // border: 1px solid black;
    background-attachment: fixed;
    background-size: 202%;
    position: relative;
    padding-bottom: 6rem;
-   // margin-top: 2rem;
    .projectNav {
       // margin-top: 1rem;
       display: flex;
@@ -47,10 +43,6 @@
       justify-content: space-between;
       .projectImg {
          width: 47%;
-         // border: 1rem solid rgb(39,39,39);
-         // background-color: white;
-         // border-radius: 10px; 
-         // box-shadow: 2px 2px 10px #000;
          img {
             width: 100%;
          }
@@ -61,8 +53,6 @@
       .projectInfo {
          width: 47%;
          text-align: center;
-         // background-color: rgba(255, 255, 255, 0.7);
-         // border-radius: 10px;
          padding: 1rem;
          h3,
          p {
