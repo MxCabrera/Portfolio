@@ -120,7 +120,12 @@
    }
 }
 
-
+@media (max-width: 1000px) {
+   header .headerTitle h2 {
+      // color: blue;
+      bottom: 17%;
+   }
+}
 
 
 @media (max-width: 995px) {
@@ -142,6 +147,7 @@
       width: 26vw;
       height: 27rem;
    }
+
 }
 
 @media (max-width: 915px) {

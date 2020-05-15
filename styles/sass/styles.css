@@ -1546,6 +1546,12 @@ form button:hover {
   }
 }
 
+@media (max-width: 1000px) {
+  header .headerTitle h2 {
+    bottom: 17%;
+  }
+}
+
 @media (max-width: 995px) {
   .budy .wrapperS {
     margin: 10rem -22.5rem 0 0rem;
