@@ -446,7 +446,7 @@ header .headerTitle h2 {
   font-family: 'Dancing Script', cursive;
   margin: 2rem 0 10rem 0;
   position: absolute;
-  bottom: 30%;
+  bottom: 25%;
   left: 40%;
   z-index: 1000;
 }
@@ -1789,6 +1789,9 @@ form button:hover {
 @media (max-width: 469px) {
   header {
     height: 667px;
+  }
+  header .svg {
+    bottom: -4.3rem;
   }
   header .topnav .flexNav {
     width: 55%;

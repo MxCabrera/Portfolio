@@ -380,6 +380,9 @@
 @media (max-width: 469px) {
    header {
       height: 667px;
+      .svg {
+         bottom: -4.3rem;
+      }
    }
    header .topnav .flexNav {
       width: 55%;
@@ -481,3 +484,4 @@
       }
    }
 }
+
