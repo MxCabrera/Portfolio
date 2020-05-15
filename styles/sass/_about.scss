@@ -1,6 +1,3 @@
-html {
-   color: black;
-}
 .about {
    padding: 1rem 0 3rem 0;
    h2 {
@@ -12,7 +9,6 @@ html {
       float: left;
       shape-outside: circle(50%);
       margin: 1rem 2rem 1rem 0;
-
       img {
          width: 100%;
          border-radius: 50%;
@@ -63,8 +59,8 @@ html {
       padding: 0.6rem;
       text-transform: uppercase;
       margin-left: 1rem;
+      }
    }
-}
    button {
       padding: 1rem 1rem 0.8rem 1rem;
       box-shadow: 3px 3px 10px #000;
@@ -72,7 +68,6 @@ html {
       float: right;
       background-color: black;
       color: white;
-
       a {
          text-decoration: none;
          font-size: 0.7rem;

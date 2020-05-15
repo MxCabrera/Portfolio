@@ -7,7 +7,6 @@
    position: relative;
    padding-bottom: 6rem;
    .projectNav {
-      // margin-top: 1rem;
       display: flex;
       flex-direction: column;
       position: sticky;
@@ -29,11 +28,18 @@
       font-size: 3rem;
       font-family: 'Dancing Script', cursive;
    }
-}
-
-.divide { 
-   margin: 0 auto;
-   text-align: center;
+   .projectLink {
+      width: 100%;
+   }
+   .divide { 
+      margin: 0 auto;
+      text-align: center;
+   }
+   .svg2 {
+      position:absolute; 
+      bottom: -6rem;
+      z-index: 1000;
+   }
 }
 
 .project {
@@ -54,6 +60,9 @@
          width: 47%;
          text-align: center;
          padding: 1rem;
+         .goat {
+            z-index: 1000;
+         }
          h3,
          p {
             width: 100%;
@@ -95,19 +104,6 @@
    
 }
 
-.goat {
-   z-index: 1000;
-}
-
-.projectLink {
-   width: 100%;
-}
-
-.svg2 {
-   position:absolute; 
-   bottom: -6rem;
-   z-index: 1000;
-}
 
 .smear {
    width: 20%;
@@ -119,7 +115,6 @@
       width: 100%;
    }
 }
-
 .smear2 {
    width: 20%;
    position: absolute;
@@ -130,8 +125,6 @@
       width: 100%;
    }
 }
-
-
 .smear3 {
    width: 20%;
    position: absolute;
@@ -143,7 +136,6 @@
       width: 100%;
    }
 }
-
 .smear4 {
    width: 20%;
    position: absolute;
@@ -154,7 +146,6 @@
       width: 100%;
    }
 }
-
 .smear5 {
    width: 20%;
    position: absolute;

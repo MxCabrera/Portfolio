@@ -1,0 +1,474 @@
+@media (max-width: 1400px) {
+      // header
+   .budy .wrapperS {
+      margin: 10rem 0 0 12rem;
+   }
+}
+
+
+
+
+@media (max-width: 1350px) {
+   .budy .wrapperS {
+      margin: 10rem 0 0 10rem;
+   }
+}
+
+
+
+@media (max-width: 1350px) {
+   header {
+      .headerTitle h1 {
+         left: 15%;
+      }  
+   }
+   .budy .wrapperS {
+      margin: 10rem 0 0 10rem;
+   }
+}
+
+
+
+@media (max-width: 1300px) {
+   .budy .wrapperS {
+      margin: 10rem 0 0 8.3rem;
+   }
+   .about .headshot {
+      width: 40%;
+   }
+}
+
+
+
+@media (max-width: 1250px) {
+
+   .budy .wrapperS {
+      margin: 10rem 0 0 10rem;
+      grid-template-columns: repeat(6, 40px);
+      grid-template-rows: repeat(6, 40px);
+   }
+}
+
+
+
+@media (max-width: 1209px) {
+   header {
+      .headerTitle h1 {
+         left: 14%;
+      }
+      
+   }
+   .budy .wrapperS {
+      margin: 10rem 0 0 8rem;
+   }
+   .content .flexMe i {
+      font-size: 4rem;
+      margin: 1rem;
+   }
+}
+
+
+
+@media (max-width: 1157px) {
+   header {
+      .headerTitle h1 {
+         left: 13%;
+      }  
+   }
+   .budy .wrapperS {
+      margin: 10rem 0 0 6rem;
+   }
+}
+
+
+
+
+@media (max-width: 1109px) {
+   header {
+      .headerTitle h1 {
+         width: 75%;
+      }  
+   }
+   .budy .wrapperS {
+      margin: 10rem 0 0 4rem;
+   }
+   .product {
+      width: 21%;
+   }
+   .content .flexMe i {
+      margin: 2rem;
+   }
+   .content .flexMe .title {
+      bottom: 1.5rem;
+   }
+   .blogImg img {
+    height: 11.5rem;
+}
+}
+
+
+
+
+@media (max-width: 1048px) {
+   header {
+      .headerTitle h2 {
+         left: 36%;
+      }
+   }
+   .budy .wrapperS {
+      margin: 10rem 0 0 2rem;
+   }
+}
+
+
+
+
+@media (max-width: 995px) {
+   .budy .wrapperS {
+      margin: 10rem -22.5rem 0 0rem;
+      grid-template-columns: repeat(6, 40px);
+      grid-template-rows: repeat(6, 40px);
+      grid-gap: 1.5rem;
+      transform: rotate(135deg);
+   }
+   .blogInfo button {
+      margin: 1.5rem auto 0 auto;
+   }
+   .blogImg img {
+      height: 9rem;
+   }
+   .bodyz .quotes .box {
+      position: relative;
+      width: 26vw;
+      height: 27rem;
+   }
+}
+
+@media (max-width: 915px) {
+   .budy .wrapperS {
+      margin: 10rem -3.5rem 0 0rem;
+   }
+   .about .headshot {
+      width: 50%;
+   }
+   .project .flexP .projectInfo p {
+      font-size: 1rem;
+   }
+   .content .flexMe i {
+      font-size: 3rem;
+      margin: 1rem;
+   }
+   .content .flexMe .title {
+      bottom: 1.5rem;
+   }
+   .blogInfo button {
+      width: 60%;
+   }
+}
+
+
+@media (max-width: 867px) {
+   .budy .wrapperS {
+      margin: 10rem 14.5rem 0 0rem;
+   }
+   header .topnav .flexNav {
+      width: 75%;
+   }
+   .contact .flex {
+      flex-direction: column;
+   }
+   .contact {
+      margin-top: 2rem;
+   }
+   .contact .flexP .contactImg {
+      width: 100%;
+      img {
+         height: 28rem;
+      }
+   }
+   .contactNav .flex {
+      flex-direction: row; 
+      li  {
+         font-size: 4rem;
+      }
+   }
+   .contact .flexP .contactInfo {
+      width: 100%;
+      margin-top: 3rem;
+   }
+
+}
+
+
+@media (max-width: 802px) {
+   .about .miguel {
+      float: none;
+      width: 40%;
+   }
+   .project .flexP .projectInfo h3 {
+      font-size: 2rem;
+   }
+   .bodyz {
+      // flex-direction: column;
+      justify-content: center;
+   }
+   .bodyz .quotes .box1,
+   .bodyz .quotes .box2 {
+      display: none;
+   }
+   .bodyz .quotes .box {
+      position: relative;
+      width: 100%;
+      height: 34rem;
+   }
+      .blogInfo button {
+      width: 40%;
+   }
+
+   .blogImg img {
+      height: 20rem;
+   }
+}
+
+
+@media (max-width: 791px) {
+   .budy .wrapperS {
+      margin: 10rem 30rem 0 0rem;
+   }
+   header .titleNav .topnav a {
+      font-size: 14px;
+      padding: 0.5rem;
+   }
+   header .topnav .logoContainer .logo img {
+      padding-right: 1rem;
+      padding-top: 0.5rem;
+   }
+   header .headerTitle h2 {
+      left: 33%;
+   }
+   .about .headshot {
+      width: 65%;
+   }
+}
+
+
+
+@media (max-width: 734px) {
+   .budy {
+      display: none;
+   }
+   header .topnav .flexNav .separate {
+      margin-top: 0.5rem;
+   }
+   header .headerTitle h2 {
+      left: 30%;
+   }
+   .project .flex {
+      flex-direction: column;  
+   }
+   .project .flexP .projectImg {
+      width: 100%;
+   }
+   .project .flexP .projectInfo {
+      width: 100%;
+   }
+}
+
+
+@media (max-width: 700px) {
+   .content .flexMe .title {
+      bottom: 0.5rem;
+   }
+   .contact .flexP .contactImg {
+      width: 100%;
+      img {
+         height: 22rem;
+      }
+   }
+   .contactNav .flex {
+      li  {
+         font-size: 3rem;
+      }
+   }
+
+}
+
+@media (max-width: 650px ) {
+   .about h3 {
+      font-size: 0.8rem;
+   }
+   .about p {
+      font-size: 1rem;
+   }
+   .product {
+      width: 30%;
+   }
+}
+
+
+
+@media (max-width: 595px) {
+   header {
+      .headerTitle h1 {
+         font-size: 4rem;
+      }
+      .topnav .flexNav {
+            width: 70%;
+            display: none;
+            .separate {
+               display: none;
+            }
+         }
+         .headerTitle h2 {
+            left: 29%;
+            font-size: 2rem;
+         }
+      }
+   }
+
+
+
+
+@media (max-width: 547px) {
+   header {
+      .headerTitle h1 {
+         font-size: 4rem;
+      }
+      .topnav .flexNav {
+         width: 65%;
+         li a {
+            font-size: 11px;
+         }
+      }
+   }
+      .about .headshot {
+      width: 80%;
+   }
+   .bodyz .quotes .box {
+      height: 30rem;
+   }
+      .blogImg img {
+      height: 15rem;
+   }
+   .contact .flexP .contactImg {
+      img {
+         height: 18rem;
+      }
+   }
+   .contactNav .flex {
+      li  {
+         font-size: 2.5rem;
+      }
+   }
+   .message .migs {
+      font-size: 1.5rem;
+   }
+   .copyright p {
+      font-size: 0.8rem;
+   }
+}
+
+
+
+
+@media (max-width: 469px) {
+   header .topnav .flexNav {
+      width: 55%;
+      flex-wrap: wrap;
+   }
+   header .headerTitle h2 {
+         left: 25%;
+   }
+   .about h3 {
+      font-size: 0.6rem;
+      .work {
+         margin-left: 1.5rem;
+      }
+   }
+   .product {
+      width: 45%;
+   }
+   .content .flexMe i {
+      font-size: 4rem;
+      margin: 1rem;
+   }
+   .bodyz .quotes .box {
+      height: 25rem;
+   }
+      .blogImg img {
+      height: 10rem;
+   }
+   .contact .flexP .contactImg {
+      img {
+         height: 15rem;
+      }
+   }
+}
+
+@media (max-width: 425px) {
+   header .headerTitle h1 {
+      font-size: 3.5rem;
+      width: 85%;
+      left: 8%;
+   }
+   .about .headshot {
+      width: 95%;
+   }
+   
+}
+
+
+
+@media (max-width: 400px) {
+   header .topnav .flexNav {
+      margin-right: -2rem;
+      width: 61%;
+      li a {
+         text-align: center;
+         justify-content: center
+      }
+   }
+   header {
+      .headerTitle {
+         h1 {
+            font-size: 3rem;
+         }
+         h2 {
+            left: 22%;
+            font-size: 1.7rem;
+         }
+      }
+      .svg {
+         bottom: -2.3rem;
+      }
+   }
+   .content .flexMe i {
+      font-size: 3rem;
+      margin: 1rem;
+   }
+   .content .flexMe .title {
+      display: none;
+   }
+   .contact .flexP .contactImg {
+      img {
+         height: 12rem;
+      }
+   }
+   .contactNav .flex {
+      li  {
+         font-size: 1.8rem;
+      }
+   }
+   .copyright p {
+      font-size: 0.6rem;
+   }
+}
+
+
+@media (max-width: 350px) {
+      .about h3 {
+      .work {
+         margin-left: 1rem;
+      }
+   }
+}

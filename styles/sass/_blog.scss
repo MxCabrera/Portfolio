@@ -4,9 +4,12 @@
    background-size: 50%;
    padding: 0rem 0 12rem 0;
    z-index: -10000;
-   h2 {
-      font-family: 'Dancing Script', cursive;
-      font-size: 3rem;
+   .spacing {
+      margin-top: -3rem;
+      h2 {
+         font-family: 'Dancing Script', cursive;
+         font-size: 3rem;
+      }
    }
 }
 
@@ -166,12 +169,6 @@
       }
    }
 }
-
-   .spacing {
-      margin-top: -3rem;
-   }
-
-
 .miggy {
    margin-top: -10rem;
 }
