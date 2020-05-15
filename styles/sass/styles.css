@@ -795,6 +795,7 @@ header .headerButton:hover {
   font-size: 1.3rem;
   margin: 0;
   z-index: 1000;
+  text-shadow: 1px 1px 2px #fff;
 }
 
 .project .flexP .projectInfo button {
@@ -826,6 +827,7 @@ header .headerButton:hover {
   position: absolute;
   right: 3rem;
   top: 39rem;
+  z-index: 1;
   -webkit-transform: rotate(-25deg);
           transform: rotate(-25deg);
 }
@@ -841,6 +843,7 @@ header .headerButton:hover {
   top: 64rem;
   -webkit-transform: rotate(-155deg);
           transform: rotate(-155deg);
+  z-index: 1;
 }
 
 .smear2 img {
@@ -854,7 +857,7 @@ header .headerButton:hover {
   top: 95rem;
   -webkit-transform: rotate(-25deg);
           transform: rotate(-25deg);
-  z-index: 999;
+  z-index: 0;
 }
 
 .smear3 img {
@@ -1482,6 +1485,15 @@ form button:hover {
   .about .headshot {
     width: 40%;
   }
+  .smear3 {
+    top: 89rem;
+  }
+  .smear4 {
+    top: 111rem;
+  }
+  .smear5 {
+    bottom: 9rem;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -1504,6 +1516,9 @@ form button:hover {
   .content .flexMe i {
     font-size: 4rem;
     margin: 1rem;
+  }
+  .smear3 {
+    top: 91rem;
   }
 }
 
@@ -1534,6 +1549,15 @@ form button:hover {
   }
   .blogImg img {
     height: 11.5rem;
+  }
+  .smear2 {
+    top: 62rem;
+  }
+  .smear4 {
+    top: 109rem;
+  }
+  .smear5 {
+    bottom: 8rem;
   }
 }
 
@@ -1574,6 +1598,9 @@ form button:hover {
     width: 26vw;
     height: 27rem;
   }
+  .smear {
+    top: 35rem;
+  }
 }
 
 @media (max-width: 915px) {
@@ -1595,6 +1622,21 @@ form button:hover {
   }
   .blogInfo button {
     width: 60%;
+  }
+  .smear {
+    top: 32rem;
+  }
+  .smear2 {
+    top: 57rem;
+  }
+  .project .flexP .projectInfo {
+    width: 50%;
+  }
+  .smear3 {
+    top: 82rem;
+  }
+  .smear4 {
+    top: 98rem;
   }
 }
 
@@ -1633,6 +1675,24 @@ form button:hover {
     width: 100%;
     margin-top: 3rem;
   }
+  .smear {
+    top: 30rem;
+  }
+}
+
+@media (max-width: 834px) {
+  .smear2 {
+    top: 59rem;
+  }
+  .smear3 {
+    top: 85rem;
+  }
+  .smear4 {
+    top: 101rem;
+  }
+  .smear5 {
+    bottom: 8rem;
+  }
 }
 
 @media (max-width: 802px) {
@@ -1663,6 +1723,18 @@ form button:hover {
   .blogImg img {
     height: 20rem;
   }
+  .smear2 {
+    top: 56rem;
+  }
+  .smear3 {
+    top: 81rem;
+  }
+  .smear4 {
+    top: 96rem;
+  }
+  .smear5 {
+    bottom: 7rem;
+  }
 }
 
 @media (max-width: 791px) {
@@ -1682,6 +1754,18 @@ form button:hover {
   }
   .about .headshot {
     width: 65%;
+  }
+  .smear2 {
+    top: 58rem;
+  }
+  .smear3 {
+    top: 85rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .smear4 {
+    top: 98rem;
   }
 }
 
@@ -1707,6 +1791,25 @@ form button:hover {
   .project .flexP .projectInfo {
     width: 100%;
   }
+  .smear {
+    top: 47rem;
+  }
+  .smear2 {
+    top: 70rem;
+    width: 25%;
+  }
+  .smear3 {
+    top: 132rem;
+    width: 25%;
+  }
+  .smear4 {
+    top: 150rem;
+    width: 25%;
+  }
+  .smear5 {
+    bottom: 11.5rem;
+    width: 25%;
+  }
 }
 
 @media (max-width: 700px) {
@@ -1722,6 +1825,18 @@ form button:hover {
   .contactNav .flex li {
     font-size: 3rem;
   }
+  .smear {
+    top: 45rem;
+  }
+  .smear2 {
+    top: 67rem;
+  }
+  .smear3 {
+    top: 129rem;
+  }
+  .smear4 {
+    top: 146rem;
+  }
 }
 
 @media (max-width: 650px) {
@@ -1733,6 +1848,18 @@ form button:hover {
   }
   .product {
     width: 30%;
+  }
+  .smear {
+    top: 43rem;
+  }
+  .smear2 {
+    top: 65rem;
+  }
+  .smear3 {
+    top: 122rem;
+  }
+  .smear4 {
+    top: 142rem;
   }
 }
 
@@ -1750,6 +1877,18 @@ form button:hover {
   header .headerTitle h2 {
     left: 29%;
     font-size: 2rem;
+  }
+  .smear {
+    top: 41rem;
+  }
+  .smear3 {
+    top: 119rem;
+  }
+  .smear4 {
+    top: 137rem;
+  }
+  .smear5 {
+    bottom: 8.5rem;
   }
 }
 
@@ -1783,6 +1922,19 @@ form button:hover {
   }
   .copyright p {
     font-size: 0.8rem;
+  }
+  .smear2 {
+    top: 63rem;
+  }
+  .smear3 {
+    top: 117rem;
+    right: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .smear4 {
+    top: 134rem;
   }
 }
 
@@ -1823,6 +1975,21 @@ form button:hover {
   .contact .flexP .contactImg img {
     height: 15rem;
   }
+  .smear {
+    top: 40rem;
+    width: 25%;
+  }
+  .smear3 {
+    top: 115rem;
+  }
+  .smear4 {
+    left: 2rem;
+    top: 131rem;
+  }
+  .smear5 {
+    right: 2rem;
+    bottom: 8.5rem;
+  }
 }
 
 @media (max-width: 425px) {
@@ -1833,6 +2000,18 @@ form button:hover {
   }
   .about .headshot {
     width: 95%;
+  }
+  .smear {
+    top: 38rem;
+  }
+  .smear2 {
+    top: 57rem;
+  }
+  .smear3 {
+    top: 108rem;
+  }
+  .smear4 {
+    top: 129rem;
   }
 }
 
@@ -1873,11 +2052,51 @@ form button:hover {
   .copyright p {
     font-size: 0.6rem;
   }
+  .smear {
+    top: 37rem;
+    right: 1.5rem;
+  }
+  .smear3 {
+    top: 107rem;
+  }
+  .smear4 {
+    top: 127rem;
+  }
+}
+
+@media (max-width: 368px) {
+  .smear3 {
+    top: 107.5rem;
+  }
+  .smear4 {
+    top: 131rem;
+  }
 }
 
 @media (max-width: 350px) {
   .about h3 .work {
     margin-left: 1rem;
+  }
+  .smear2 {
+    top: 59rem;
+  }
+  .smear3 {
+    top: 112.2rem;
+  }
+}
+
+@media (max-width: 334px) {
+  .smear3 {
+    top: 115rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .smear3 {
+    top: 109rem;
+  }
+  .smear4 {
+    top: 133rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
