@@ -372,6 +372,9 @@
 
 
 @media (max-width: 469px) {
+   header {
+      height: 667px;
+   }
    header .topnav .flexNav {
       width: 55%;
       flex-wrap: wrap;

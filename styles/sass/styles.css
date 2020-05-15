@@ -1781,6 +1781,9 @@ form button:hover {
 }
 
 @media (max-width: 469px) {
+  header {
+    height: 667px;
+  }
   header .topnav .flexNav {
     width: 55%;
     -ms-flex-wrap: wrap;
