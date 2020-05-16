@@ -25,6 +25,12 @@
    margin: 0.5rem auto;
    position: relative;
    width: 16%;
+   &:focus {
+      border: 1px solid purple;
+   }
+   &:active {
+      border: 1px solid blue;
+   }
    .effect-1,
    .effect-2 {
       display: none;

@@ -6,7 +6,7 @@ header {
    .titleNav {
       width: 100%;
       background-color: white;
-      border: 1px solid black;
+      // border: 1px solid black;
       position: sticky;
       top: 0;
       z-index: 2000;
@@ -24,6 +24,12 @@ header {
       }
       li a {
          float: left;
+         &:focus {
+            border: 1px solid purple;
+         }
+         &:active {
+            border: 1px solid blue;
+         }
       }
       a .icon {
          float: right;
@@ -64,9 +70,11 @@ header {
          li:hover a {
             color: grey;
             text-decoration: underline;
+            transition: all 0.6s;
             &::after {
                content: '*';
                color: red;
+               transition: all 0.6s;
             }
          }
       }
@@ -92,8 +100,8 @@ header {
       
    .headerTitle {
       margin: 0 auto;
-      text-shadow: 8px 8px 1px #fff; 
       h1 {
+         text-shadow: 8px 8px 1px #fff; 
          width: 70%;
          font-size: 5rem;
          text-align: center;
@@ -104,8 +112,9 @@ header {
          bottom: 50%;
          left: 16%;
          z-index: 1000;
-         }
+      }
       h2 {
+         text-shadow: 2px 2px 1px #fff; 
          text-align: center;
          font-size: 2.5rem;
          font-family: 'Dancing Script', cursive;
@@ -126,6 +135,12 @@ header {
          color: white;
          transition: all 0.7s;
          text-shadow: 1px 1px 10px rgb(199, 197, 197);
+      }
+      &:focus {
+         border: 1px solid purple;
+      }
+      &:active {
+         border: 1px solid blue;
       }
    }
 }

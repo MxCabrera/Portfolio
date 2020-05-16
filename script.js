@@ -17,14 +17,14 @@ $('.arrowD').on('click', function(){
 
 $('.headerButton').on('click', function() {
    window.scrollTo(0,800);
-   if (app.isPlaying) {
-      audio.stop();
-   } else {
-      app.isPlaying = true;
-      let audio = new Audio('./assets/intro.mp3');
-      audio.volume = 0.01;
-      audio.play();
-   };
+   // if (app.isPlaying) {
+   //    audio.stop();
+   // } else {
+   //    app.isPlaying = true;
+   //    let audio = new Audio('./assets/intro.mp3');
+   //    audio.volume = 0.025;
+   //    audio.play();
+   // };
 });
 
 // const Choreographer = require('choreographer-js')

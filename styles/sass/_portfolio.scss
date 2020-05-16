@@ -81,7 +81,7 @@
             text-shadow: 1px 1px 2px #fff;
          }
          button {
-            padding: 0.8rem;
+            padding: 0.5rem;
             background-color: black;
             border-radius: none;
             margin-top: 2rem;
@@ -89,9 +89,15 @@
             a {
                color: white; 
                text-decoration: none;
-               font-size: 0.6rem;
+               font-size: .75rem;
                letter-spacing: 1.3px;
                text-transform: uppercase;
+               &:focus {
+                  border: 1px solid purple;
+               }
+               &:active {
+                  border: 1px solid blue;
+               }
             }
             &:hover {
                background-color:white;
