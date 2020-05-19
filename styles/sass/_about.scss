@@ -1,8 +1,9 @@
 .about {
    padding: 1rem 0 3rem 0;
    h2 {
-      font-family: 'Dancing Script', cursive;
+      font-family: 'Montserrat', sans-serif;
       font-size: 3rem;
+      font-weight: 400;
    }
    .miguel {
       width: 20%;
@@ -65,6 +66,8 @@
       font-size: 1.2rem;
       margin: 2rem 0;
       font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      // font-family: 'Work Sans', sans-serif;
       .work {
          background-color: rgb(172, 24, 24);
          text-shadow: 2px 2px 1px #000;

@@ -579,8 +579,9 @@ header .headerButton:active {
 }
 
 .about h2 {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
+  font-weight: 400;
 }
 
 .about .miguel {
@@ -652,6 +653,7 @@ header .headerButton:active {
   font-size: 1.2rem;
   margin: 2rem 0;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 .about h3 .work {
@@ -774,7 +776,8 @@ header .headerButton:active {
 
 .projects h2 {
   font-size: 3rem;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 .projects .projectLink {
@@ -952,7 +955,8 @@ header .headerButton:active {
 }
 
 .skills h2 {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   font-size: 3rem;
 }
 
@@ -1150,7 +1154,8 @@ header .headerButton:active {
 }
 
 .blog .spacing h2 {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   font-size: 3rem;
 }
 
@@ -1403,9 +1408,10 @@ header .headerButton:active {
 }
 
 .contact .flexP .contactInfo h2 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
   margin: 0.5rem auto;
+  font-weight: 400;
 }
 
 .contactNav li {
@@ -1453,11 +1459,11 @@ form textarea {
 }
 
 form button {
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1rem;
   border-radius: 10px;
   font-size: 1.2rem;
-  font-family: 'Dancing Script', cursive;
-  font-weight: 700;
+  text-transform: uppercase;
+  font-weight: 400;
   letter-spacing: 1.6px;
   background-color: black;
   margin-top: 1.5rem;
