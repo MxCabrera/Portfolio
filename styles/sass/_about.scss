@@ -1,5 +1,7 @@
 .about {
    padding: 1rem 0 3rem 0;
+   position: relative;
+   z-index: 1000;
    h2 {
       font-family: 'Montserrat', sans-serif;
       font-size: 3rem;
@@ -10,6 +12,7 @@
       float: left;
       shape-outside: circle(50%);
       margin: 1rem 2rem 1rem 0;
+      z-index: 1000;
       img {
          width: 100%;
          border-radius: 50%;
@@ -30,8 +33,10 @@
       font-weight: 700;
       color: #2b4152;
       text-shadow: 4px 4px 1px rgb(184, 183, 183);
+      z-index: 1000;
    }
    .paragraph {
+      z-index: 1000;
       button {
          margin-right: 1rem;
          a{
@@ -49,6 +54,7 @@
       font-size: 1.2rem;
       line-height: 1.4rem;
       font-family: 'Work Sans', sans-serif; 
+      z-index: 1000;
       .frontend {
          color: #2b4152;
          font-size: 1.2rem;

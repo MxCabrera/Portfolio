@@ -302,6 +302,7 @@ header {
   background: linear-gradient(135deg, rgba(83, 83, 83, 0.9), rgba(119, 119, 119, 0.9), rgba(238, 236, 236, 0.9), rgba(160, 158, 158, 0.9), rgba(53, 53, 53, 0.9)), url(../../assets/subtle5.png);
   background-attachment: fixed;
   background-size: 200%;
+  z-index: -1000;
 }
 
 header .titleNav {
@@ -423,7 +424,7 @@ header .myContact:hover a {
 
 header .svg {
   position: absolute;
-  bottom: -1.3rem;
+  bottom: -1.5rem;
   z-index: 0;
 }
 
@@ -497,6 +498,12 @@ header .headerButton:active {
   -ms-flex-line-pack: justify;
       align-content: space-between;
   z-index: -1;
+}
+
+.svg {
+  position: absolute;
+  bottom: -18.5rem;
+  z-index: 0;
 }
 
 .menu {
@@ -576,6 +583,8 @@ header .headerButton:active {
 
 .about {
   padding: 1rem 0 3rem 0;
+  position: relative;
+  z-index: 1000;
 }
 
 .about h2 {
@@ -589,6 +598,7 @@ header .headerButton:active {
   float: left;
   shape-outside: circle(50%);
   margin: 1rem 2rem 1rem 0;
+  z-index: 1000;
 }
 
 .about .miguel img {
@@ -611,6 +621,11 @@ header .headerButton:active {
   font-weight: 700;
   color: #2b4152;
   text-shadow: 4px 4px 1px #b8b7b7;
+  z-index: 1000;
+}
+
+.about .paragraph {
+  z-index: 1000;
 }
 
 .about .paragraph button {
@@ -633,6 +648,7 @@ header .headerButton:active {
   font-size: 1.2rem;
   line-height: 1.4rem;
   font-family: 'Work Sans', sans-serif;
+  z-index: 1000;
 }
 
 .about p .frontend {
@@ -2102,9 +2118,6 @@ textarea:active {
     width: 85%;
     left: 8%;
   }
-  header .svg {
-    display: none;
-  }
   .about .headshot {
     width: 95%;
   }
@@ -2135,10 +2148,12 @@ textarea:active {
   }
   header .headerTitle h1 {
     font-size: 3rem;
+    bottom: 40%;
   }
   header .headerTitle h2 {
     left: 22%;
     font-size: 1.7rem;
+    bottom: 6%;
   }
   header .svg {
     bottom: -2.3rem;
@@ -2168,6 +2183,12 @@ textarea:active {
   }
   .smear4 {
     top: 127rem;
+  }
+}
+
+@media (max-width: 375px) {
+  header .svg {
+    bottom: 3.7rem;
   }
 }
 
