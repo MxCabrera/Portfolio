@@ -588,9 +588,9 @@
       width: 85%;
       left: 8%;
    }
-   // header .svg {
-   //    display: none;
-   // }
+   header .svg {
+      display: none;
+   }
    .about .headshot {
       width: 95%;
    }
@@ -671,6 +671,9 @@
 @media (max-width: 375px) {
    header .svg {
       bottom: 3.7rem;
+   }
+   .svgz {
+      display: none;
    }
 }
 

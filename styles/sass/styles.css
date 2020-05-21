@@ -426,6 +426,8 @@ header .svg {
   position: absolute;
   bottom: -1.5rem;
   z-index: 0;
+  left: 0;
+  right: 0;
 }
 
 header .head {
@@ -500,10 +502,12 @@ header .headerButton:active {
   z-index: -1;
 }
 
-.svg {
+.svgz {
   position: absolute;
-  bottom: -18.5rem;
+  bottom: -17.5rem;
   z-index: 0;
+  left: 0;
+  right: 0;
 }
 
 .menu {
@@ -809,6 +813,8 @@ header .headerButton:active {
   position: absolute;
   bottom: -6rem;
   z-index: 1000;
+  left: 0;
+  right: 0;
 }
 
 .project {
@@ -843,6 +849,15 @@ header .headerButton:active {
 
 .project .flexP .projectInfo .goat {
   z-index: 1000;
+}
+
+.project .flexP .projectInfo .languages {
+  color: #2b4152;
+  margin-bottom: 1rem;
+}
+
+.project .flexP .projectInfo .languages i {
+  font-size: 2rem;
 }
 
 .project .flexP .projectInfo h3,
@@ -956,7 +971,7 @@ header .headerButton:active {
   width: 20%;
   position: absolute;
   right: 4.5rem;
-  bottom: 13rem;
+  bottom: 10.5rem;
   -webkit-transform: rotate(-25deg);
           transform: rotate(-25deg);
   z-index: 999;
@@ -2118,6 +2133,9 @@ textarea:active {
     width: 85%;
     left: 8%;
   }
+  header .svg {
+    display: none;
+  }
   .about .headshot {
     width: 95%;
   }
@@ -2189,6 +2207,9 @@ textarea:active {
 @media (max-width: 375px) {
   header .svg {
     bottom: 3.7rem;
+  }
+  .svgz {
+    display: none;
   }
 }
 

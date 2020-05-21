@@ -94,6 +94,8 @@ header {
       position: absolute;
       bottom: -1.5rem;
       z-index: 0;
+      left: 0;
+      right: 0;
    }
    .head {
       justify-content: space-between;
@@ -153,10 +155,12 @@ header {
    z-index: -1
 }
 
-.svg {
+.svgz {
    position: absolute;
-   bottom: -18.5rem;
+   bottom: -17.5rem;
    z-index: 0;
+   left: 0;
+   right: 0;
 }
 
 .menu {

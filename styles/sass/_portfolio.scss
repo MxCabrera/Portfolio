@@ -41,6 +41,8 @@
       position:absolute; 
       bottom: -6rem;
       z-index: 1000;
+      left: 0;
+      right: 0;
    }
 }
 
@@ -64,6 +66,13 @@
          padding: 1rem;
          .goat {
             z-index: 1000;
+         }
+         .languages {
+            color: #2b4152;
+            margin-bottom: 1rem;
+            i {
+               font-size: 2rem;
+            }
          }
          h3,
          p {
@@ -161,7 +170,7 @@
    width: 20%;
    position: absolute;
    right: 4.5rem;
-   bottom: 13rem;
+   bottom: 10.5rem;
    transform: rotate(-25deg);
    z-index: 999;
    img {
