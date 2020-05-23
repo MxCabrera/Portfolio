@@ -41,7 +41,7 @@
       opacity: 1;
       position: absolute;
       width: 84%;
-      z-index: 3000;
+      z-index: 998;
    }
    .effect-1 {
       animation: rotate 1.8s linear infinite;
@@ -74,7 +74,7 @@
    position: absolute;
    width: 84%;
    vertical-align: middle;
-   z-index: 5000;
+   z-index: 999;
    .flexMe {
       display: flex;
       justify-content: center;

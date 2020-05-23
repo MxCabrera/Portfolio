@@ -297,6 +297,11 @@ body {
   text-shadow: 5px 5px 1px #fff;
 }
 
+body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
+  position: relative;
+  z-index: 1000;
+}
+
 header {
   height: 800px;
   background: linear-gradient(135deg, rgba(83, 83, 83, 0.9), rgba(119, 119, 119, 0.9), rgba(238, 236, 236, 0.9), rgba(160, 158, 158, 0.9), rgba(53, 53, 53, 0.9)), url(../../assets/subtle5.png);
@@ -389,21 +394,9 @@ header .topnav .flexNav .separate {
   margin-top: 1rem;
 }
 
-header .topnav .flexNav li a::after {
-  content: '*';
-  color: rgba(0, 0, 0, 0);
-}
-
 header .topnav .flexNav li:hover a {
   color: grey;
   text-decoration: underline;
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
-}
-
-header .topnav .flexNav li:hover a::after {
-  content: '*';
-  color: red;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
 }
@@ -521,18 +514,8 @@ header .headerButton:active {
   border-bottom: 3px solid rgba(0, 0, 0, 0);
 }
 
-.menu li::after {
-  content: '*';
-  color: rgba(0, 0, 0, 0);
-}
-
 .menu li:hover {
   border-bottom: 3px solid #2b4152;
-}
-
-.menu li:hover::after {
-  content: '*';
-  color: grey;
 }
 
 .menu li a {
@@ -881,7 +864,7 @@ header .headerButton:active {
 }
 
 .project .flexP .projectInfo button {
-  padding: 0.5rem;
+  padding: 0.7rem;
   background-color: black;
   border-radius: none;
   margin-top: 2rem;
@@ -891,7 +874,7 @@ header .headerButton:active {
 .project .flexP .projectInfo button a {
   color: white;
   text-decoration: none;
-  font-size: .75rem;
+  font-size: .9rem;
   letter-spacing: 1.3px;
   text-transform: uppercase;
 }
@@ -912,9 +895,25 @@ header .headerButton:active {
   color: black;
 }
 
-.smear {
-  width: 20%;
+.smear,
+.smear2,
+.smear3,
+.smear4,
+.smear5 {
+  width: 19%;
   position: absolute;
+  z-index: 1;
+}
+
+.smear img,
+.smear2 img,
+.smear3 img,
+.smear4 img,
+.smear5 img {
+  width: 100%;
+}
+
+.smear {
   right: 3rem;
   top: 39rem;
   z-index: 1;
@@ -922,63 +921,32 @@ header .headerButton:active {
           transform: rotate(-25deg);
 }
 
-.smear img {
-  width: 100%;
-}
-
 .smear2 {
-  width: 20%;
-  position: absolute;
   left: 3rem;
   top: 64rem;
   -webkit-transform: rotate(-155deg);
           transform: rotate(-155deg);
-  z-index: 1;
-}
-
-.smear2 img {
-  width: 100%;
 }
 
 .smear3 {
-  width: 20%;
-  position: absolute;
-  right: 3.5rem;
+  right: 3rem;
   top: 95rem;
   -webkit-transform: rotate(-25deg);
           transform: rotate(-25deg);
-  z-index: 0;
-}
-
-.smear3 img {
-  width: 100%;
 }
 
 .smear4 {
-  width: 20%;
-  position: absolute;
   left: 3rem;
   top: 120rem;
   -webkit-transform: rotate(-155deg);
           transform: rotate(-155deg);
 }
 
-.smear4 img {
-  width: 100%;
-}
-
 .smear5 {
-  width: 20%;
-  position: absolute;
   right: 4.5rem;
-  bottom: 10.5rem;
+  bottom: 9.5rem;
   -webkit-transform: rotate(-25deg);
           transform: rotate(-25deg);
-  z-index: 999;
-}
-
-.smear5 img {
-  width: 100%;
 }
 
 .skills {
@@ -1035,7 +1003,7 @@ header .headerButton:active {
   opacity: 1;
   position: absolute;
   width: 84%;
-  z-index: 3000;
+  z-index: 998;
 }
 
 .product .effect-1 {
@@ -1074,7 +1042,7 @@ header .headerButton:active {
   position: absolute;
   width: 84%;
   vertical-align: middle;
-  z-index: 5000;
+  z-index: 999;
 }
 
 .content .flexMe {
@@ -1249,14 +1217,14 @@ header .headerButton:active {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 1.25rem;
-  -webkit-box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
-          box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.7);
+          box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.7);
 }
 
 .bodyz .quotes .box:hover {
   color: #f2f2f2;
-  -webkit-box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
-          box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.8);
+          box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.8);
 }
 
 .bodyz .quotes .box::before {
@@ -1556,10 +1524,11 @@ textarea:active {
 }
 
 .copyright p {
-  color: white;
+  color: #b6b4b4;
   margin: 0;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 *, *:before, *:after {
@@ -1595,17 +1564,23 @@ textarea:active {
 }
 
 @media (max-width: 1350px) {
-  .budy .wrapperS {
-    margin: 10rem 0 0 10rem;
-  }
-}
-
-@media (max-width: 1350px) {
   header .headerTitle h1 {
     left: 15%;
   }
   .budy .wrapperS {
     margin: 10rem 0 0 10rem;
+  }
+  .smear {
+    right: 2rem;
+  }
+  .smear2 {
+    top: 63rem;
+  }
+  .smear4 {
+    top: 117rem;
+  }
+  .smear5 {
+    bottom: 8rem;
   }
 }
 
@@ -1616,14 +1591,20 @@ textarea:active {
   .about .headshot {
     width: 40%;
   }
+  .smear2 {
+    top: 65rem;
+  }
   .smear3 {
-    top: 89rem;
+    top: 98rem;
+  }
+}
+
+@media (max-width: 1281px) {
+  .smear3 {
+    top: 102rem;
   }
   .smear4 {
-    top: 111rem;
-  }
-  .smear5 {
-    bottom: 9rem;
+    top: 121rem;
   }
 }
 
@@ -1634,6 +1615,12 @@ textarea:active {
         grid-template-columns: repeat(6, 40px);
     -ms-grid-rows: (40px)[6];
         grid-template-rows: repeat(6, 40px);
+  }
+  .smear2 {
+    top: 67rem;
+  }
+  .smear4 {
+    top: 123rem;
   }
 }
 
@@ -1649,7 +1636,7 @@ textarea:active {
     margin: 1rem;
   }
   .smear3 {
-    top: 91rem;
+    top: 103rem;
   }
 }
 
@@ -1682,13 +1669,16 @@ textarea:active {
     height: 11.5rem;
   }
   .smear2 {
-    top: 62rem;
+    top: 66rem;
   }
-  .smear4 {
-    top: 109rem;
+  .smear3 {
+    top: 105rem;
   }
   .smear5 {
-    bottom: 8rem;
+    bottom: 7rem;
+  }
+  .projects .svg2 {
+    bottom: -5rem;
   }
 }
 
@@ -1699,11 +1689,23 @@ textarea:active {
   .budy .wrapperS {
     margin: 10rem 0 0 2rem;
   }
+  .smear3 {
+    top: 106rem;
+  }
+  .smear4 {
+    top: 125rem;
+  }
 }
 
 @media (max-width: 1000px) {
   header .headerTitle h2 {
     bottom: 17%;
+  }
+  .smear {
+    top: 38rem;
+  }
+  .smear4 {
+    top: 128rem;
   }
 }
 
@@ -1732,6 +1734,15 @@ textarea:active {
   .smear {
     top: 35rem;
   }
+  .smear2 {
+    top: 67rem;
+  }
+  .smear3 {
+    top: 108rem;
+  }
+  .projects .svg2 {
+    bottom: -4rem;
+  }
 }
 
 @media (max-width: 915px) {
@@ -1755,19 +1766,20 @@ textarea:active {
     width: 60%;
   }
   .smear {
-    top: 32rem;
+    top: 34rem;
+    width: 19%;
   }
   .smear2 {
-    top: 57rem;
+    top: 60rem;
   }
   .project .flexP .projectInfo {
     width: 50%;
   }
   .smear3 {
-    top: 82rem;
+    top: 95rem;
   }
   .smear4 {
-    top: 98rem;
+    top: 114rem;
   }
 }
 
@@ -1809,6 +1821,9 @@ textarea:active {
   .smear {
     top: 30rem;
   }
+  .projects .svg2 {
+    bottom: -3rem;
+  }
 }
 
 @media (max-width: 834px) {
@@ -1816,13 +1831,7 @@ textarea:active {
     top: 59rem;
   }
   .smear3 {
-    top: 85rem;
-  }
-  .smear4 {
-    top: 101rem;
-  }
-  .smear5 {
-    bottom: 8rem;
+    top: 96rem;
   }
 }
 
@@ -1854,14 +1863,14 @@ textarea:active {
   .blogImg img {
     height: 20rem;
   }
+  .smear {
+    top: 33rem;
+  }
   .smear2 {
-    top: 56rem;
+    top: 58rem;
   }
   .smear3 {
-    top: 81rem;
-  }
-  .smear4 {
-    top: 96rem;
+    top: 94rem;
   }
   .smear5 {
     bottom: 7rem;
@@ -1887,16 +1896,10 @@ textarea:active {
     width: 65%;
   }
   .smear2 {
-    top: 58rem;
+    top: 60rem;
   }
   .smear3 {
-    top: 85rem;
-  }
-}
-
-@media (max-width: 750px) {
-  .smear4 {
-    top: 98rem;
+    top: 96rem;
   }
 }
 
@@ -1922,23 +1925,27 @@ textarea:active {
   .project .flexP .projectInfo {
     width: 100%;
   }
+  .projects .svg2 {
+    bottom: -2rem;
+  }
   .smear {
-    top: 47rem;
+    top: 51rem;
+    right: 3rem;
   }
   .smear2 {
-    top: 70rem;
+    top: 73rem;
     width: 25%;
   }
   .smear3 {
-    top: 132rem;
+    top: 143rem;
     width: 25%;
   }
   .smear4 {
-    top: 150rem;
+    top: 165rem;
     width: 25%;
   }
   .smear5 {
-    bottom: 11.5rem;
+    bottom: 9.8rem;
     width: 25%;
   }
 }
@@ -1957,16 +1964,21 @@ textarea:active {
     font-size: 3rem;
   }
   .smear {
-    top: 45rem;
+    top: 50rem;
+    right: 3rem;
+    width: 26%;
   }
   .smear2 {
-    top: 67rem;
+    top: 71rem;
   }
   .smear3 {
-    top: 129rem;
+    top: 140rem;
   }
   .smear4 {
-    top: 146rem;
+    top: 161rem;
+  }
+  .smear5 {
+    bottom: 8.5rem;
   }
 }
 
@@ -1981,16 +1993,19 @@ textarea:active {
     width: 30%;
   }
   .smear {
-    top: 43rem;
+    top: 45rem;
   }
   .smear2 {
-    top: 65rem;
+    top: 70rem;
   }
   .smear3 {
-    top: 122rem;
+    top: 134rem;
   }
   .smear4 {
-    top: 142rem;
+    top: 157rem;
+  }
+  .projects .svg2 {
+    bottom: -1rem;
   }
 }
 
@@ -2010,16 +2025,16 @@ textarea:active {
     font-size: 2rem;
   }
   .smear {
-    top: 41rem;
+    top: 44rem;
+  }
+  .smear2 {
+    top: 69rem;
   }
   .smear3 {
-    top: 119rem;
+    top: 133rem;
   }
   .smear4 {
-    top: 137rem;
-  }
-  .smear5 {
-    bottom: 8.5rem;
+    top: 151rem;
   }
 }
 
@@ -2055,17 +2070,26 @@ textarea:active {
     font-size: 0.8rem;
   }
   .smear2 {
-    top: 63rem;
+    top: 67rem;
   }
   .smear3 {
-    top: 117rem;
+    top: 131rem;
     right: 2rem;
+  }
+  .smear4 {
+    top: 149rem;
+  }
+  .projects .svg2 {
+    bottom: 0rem;
   }
 }
 
 @media (max-width: 500px) {
-  .smear4 {
-    top: 134rem;
+  .smear {
+    top: 43rem;
+  }
+  .smear3 {
+    top: 130rem;
   }
 }
 
@@ -2111,15 +2135,15 @@ textarea:active {
     height: 15rem;
   }
   .smear {
-    top: 40rem;
+    top: 43rem;
     width: 25%;
   }
   .smear3 {
-    top: 115rem;
+    top: 128rem;
   }
   .smear4 {
+    top: 147rem;
     left: 2rem;
-    top: 131rem;
   }
   .smear5 {
     right: 2rem;
@@ -2140,16 +2164,13 @@ textarea:active {
     width: 95%;
   }
   .smear {
-    top: 38rem;
-  }
-  .smear2 {
-    top: 57rem;
+    top: 42rem;
   }
   .smear3 {
-    top: 108rem;
+    top: 127rem;
   }
   .smear4 {
-    top: 129rem;
+    top: 145rem;
   }
 }
 
@@ -2193,14 +2214,11 @@ textarea:active {
     font-size: 0.6rem;
   }
   .smear {
-    top: 37rem;
+    top: 41rem;
     right: 1.5rem;
   }
   .smear3 {
-    top: 107rem;
-  }
-  .smear4 {
-    top: 127rem;
+    top: 125rem;
   }
 }
 
@@ -2213,39 +2231,48 @@ textarea:active {
   }
 }
 
-@media (max-width: 368px) {
-  .smear3 {
-    top: 107.5rem;
-  }
-  .smear4 {
-    top: 131rem;
-  }
-}
-
 @media (max-width: 350px) {
   .about h3 .work {
     margin-left: 1rem;
   }
+  .smear {
+    top: 39rem;
+  }
   .smear2 {
-    top: 59rem;
+    top: 69rem;
   }
   .smear3 {
-    top: 112.2rem;
+    top: 128rem;
+  }
+}
+
+@media (max-width: 339px) {
+  .smear3 {
+    top: 130rem;
+  }
+  .smear4 {
+    top: 151rem;
   }
 }
 
 @media (max-width: 334px) {
+  .smear {
+    top: 42rem;
+  }
+  .smear2 {
+    top: 72rem;
+  }
   .smear3 {
-    top: 115rem;
+    top: 132rem;
   }
 }
 
 @media (max-width: 320px) {
-  .smear3 {
-    top: 109rem;
+  .smear2 {
+    top: 74rem;
   }
   .smear4 {
-    top: 133rem;
+    top: 153rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

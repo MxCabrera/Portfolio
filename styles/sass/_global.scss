@@ -44,3 +44,9 @@ body {
    width: 10rem;
    text-shadow: 5px 5px 1px #fff;
 } 
+
+body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
+   position: relative;
+   z-index: 1000;
+
+}

@@ -107,3 +107,172 @@ function myFunction() {
       x.style.display = "none";
    }
 } 
+
+
+$('.css').on('click', function(){
+   Swal.fire({
+      title: 'CSS3',
+      text: 'Cascading Style Sheet - used to describe the how HTML elements are to be displayed in the app',
+      // icon: 'info',
+      confirmButtonText: 'Exit',
+      animation: false,
+      imageUrl: 'https://mcabrera.ca/assets/logo.png',
+      imageWidth: 200,
+      imageHeight: 200,
+      // background: '#fff url(https://image.shutterstock.com/z/stock-vector--exclamation-mark-exclamation-mark-hazard-warning-symbol-flat-design-style-vector-eps-444778462.jpg)'
+   })
+})
+
+$('.html').on('click', function () {
+   Swal.fire({
+      title: 'HTML5',
+      text: 'Hyperlink Text Markup Language - the standard markup language for web pages',
+      // icon: 'info',
+      confirmButtonText: 'Exit',
+      animation: false,
+      imageUrl: 'https://mcabrera.ca/assets/logo.png',
+      imageWidth: 200,
+      imageHeight: 200,
+      // background: '#fff url(https://image.shutterstock.com/z/stock-vector--exclamation-mark-exclamation-mark-hazard-warning-symbol-flat-design-style-vector-eps-444778462.jpg)'
+   })
+})
+
+$('.js').on('click', function () {
+   Swal.fire({
+      title: 'JavaScript',
+      text: 'The programming language for the web and can update and change both CSS and HTML',
+      // icon: 'info',
+      confirmButtonText: 'Exit',
+      animation: false,
+      imageUrl: 'https://mcabrera.ca/assets/logo.png',
+      imageWidth: 200,
+      imageHeight: 200,
+      // background: '#fff url(https://image.shutterstock.com/z/stock-vector--exclamation-mark-exclamation-mark-hazard-warning-symbol-flat-design-style-vector-eps-444778462.jpg)'
+   })
+})
+
+$('.jq').on('click', function () {
+   Swal.fire({
+      title: 'jQuery',
+      text: 'a JavaScript Library that allows you to code quicker and easily with its built-in methods',
+      // icon: 'info',
+      confirmButtonText: 'Exit',
+      animation: false,
+      imageUrl: 'https://mcabrera.ca/assets/logo.png',
+      imageWidth: 200,
+      imageHeight: 200,
+      // background: '#fff url(https://image.shutterstock.com/z/stock-vector--exclamation-mark-exclamation-mark-hazard-warning-symbol-flat-design-style-vector-eps-444778462.jpg)'
+   })
+})
+
+$('.gthb').on('click', function () {
+   Swal.fire({
+      title: 'GitHub',
+      text: 'A Git repository hosting service that allows you to manipulate personal projects, share it, collaborate and many other features.',
+      // icon: 'info',
+      confirmButtonText: 'Exit',
+      animation: false,
+      imageUrl: 'https://mcabrera.ca/assets/logo.png',
+      imageWidth: 200,
+      imageHeight: 200,
+      // background: '#fff url(https://image.shutterstock.com/z/stock-vector--exclamation-mark-exclamation-mark-hazard-warning-symbol-flat-design-style-vector-eps-444778462.jpg)'
+   })
+})
+
+$('.git').on('click', function () {
+   Swal.fire({
+      title: 'Git',
+      text: 'A free and open source distributed version control system designed to handle every projects efficiently.',
+      // icon: 'info',
+      confirmButtonText: 'Exit',
+      animation: false,
+      imageUrl: 'https://mcabrera.ca/assets/logo.png',
+      imageWidth: 200,
+      imageHeight: 200,
+      // background: '#fff url(https://image.shutterstock.com/z/stock-vector--exclamation-mark-exclamation-mark-hazard-warning-symbol-flat-design-style-vector-eps-444778462.jpg)'
+   })
+})
+
+$('.react').on('click', function () {
+   Swal.fire({
+      title: 'React',
+      text: 'A JavaScript library which allows users to create interactive UI projects. Used as a base in the development of apps.',
+      // icon: 'info',
+      confirmButtonText: 'Exit',
+      animation: false,
+      imageUrl: 'https://mcabrera.ca/assets/logo.png',
+      imageWidth: 200,
+      imageHeight: 200,
+      // background: '#fff url(https://image.shutterstock.com/z/stock-vector--exclamation-mark-exclamation-mark-hazard-warning-symbol-flat-design-style-vector-eps-444778462.jpg)'
+   })
+})
+
+$('.fire').on('click', function () {
+   Swal.fire({
+      title: 'Firebase',
+      text: 'A development platform that allows users to store information within their own projects to be manipulated according to client request.',
+      // icon: 'info',
+      confirmButtonText: 'Exit',
+      animation: false,
+      imageUrl: 'https://mcabrera.ca/assets/logo.png',
+      imageWidth: 200,
+      imageHeight: 200,
+      // background: '#fff url(https://image.shutterstock.com/z/stock-vector--exclamation-mark-exclamation-mark-hazard-warning-symbol-flat-design-style-vector-eps-444778462.jpg)'
+   })
+})
+
+$('.sass').on('click', function () {
+   Swal.fire({
+      title: 'Sass',
+      text: 'Syntactically awesome style sheets - An extension of CSS that enables you to use styling code more efficiently.',
+      // icon: 'info',
+      confirmButtonText: 'Exit',
+      animation: false,
+      imageUrl: 'https://mcabrera.ca/assets/logo.png',
+      imageWidth: 200,
+      imageHeight: 200,
+      // background: '#fff url(https://image.shutterstock.com/z/stock-vector--exclamation-mark-exclamation-mark-hazard-warning-symbol-flat-design-style-vector-eps-444778462.jpg)'
+   })
+})
+
+$('.term').on('click', function () {
+   Swal.fire({
+      title: 'iTerminal2',
+      text: 'A GPL-licensed terminal emulator for macOS which supports operating system features.',
+      // icon: 'info',
+      confirmButtonText: 'Exit',
+      animation: false,
+      imageUrl: 'https://mcabrera.ca/assets/logo.png',
+      imageWidth: 200,
+      imageHeight: 200,
+      // background: '#fff url(https://image.shutterstock.com/z/stock-vector--exclamation-mark-exclamation-mark-hazard-warning-symbol-flat-design-style-vector-eps-444778462.jpg)'
+   })
+})
+
+$('.resp').on('click', function () {
+   Swal.fire({
+      title: 'Responsive Web Designs',
+      text: 'An approach to web design that make web pages render to correct size properly according to a variety of electronic devices',
+      // icon: 'info',
+      confirmButtonText: 'Exit',
+      animation: false,
+      imageUrl: 'https://mcabrera.ca/assets/logo.png',
+      imageWidth: 200,
+      imageHeight: 200,
+      // background: '#fff url(https://image.shutterstock.com/z/stock-vector--exclamation-mark-exclamation-mark-hazard-warning-symbol-flat-design-style-vector-eps-444778462.jpg)'
+   })
+})
+
+$('.acc').on('click', function () {
+   Swal.fire({
+      title: 'Web Accessibility',
+      text: 'An approach to design a web application that allows people with disabilities to use them easily and efficiently. Minimal/No barriers when experiencing the app.',
+      // icon: 'info',
+      confirmButtonText: 'Exit',
+      animation: false,
+      imageUrl: 'https://mcabrera.ca/assets/logo.png',
+      imageWidth: 200,
+      imageHeight: 200,
+      // background: '#fff url(https://image.shutterstock.com/z/stock-vector--exclamation-mark-exclamation-mark-hazard-warning-symbol-flat-design-style-vector-eps-444778462.jpg)'
+   })
+})

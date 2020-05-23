@@ -1,19 +1,8 @@
 @media (max-width: 1400px) {
-      // header
    .budy .wrapperS {
       margin: 10rem 0 0 12rem;
    }
 }
-
-
-
-
-@media (max-width: 1350px) {
-   .budy .wrapperS {
-      margin: 10rem 0 0 10rem;
-   }
-}
-
 
 
 @media (max-width: 1350px) {
@@ -24,6 +13,18 @@
    }
    .budy .wrapperS {
       margin: 10rem 0 0 10rem;
+   }
+   .smear {
+      right: 2rem;
+   }
+   .smear2 {
+      top: 63rem;
+   }
+   .smear4 {
+      top: 117rem;
+   }
+   .smear5 {
+      bottom: 8rem;
    }
 }
 
@@ -36,17 +37,22 @@
    .about .headshot {
       width: 40%;
    }
+   .smear2 {
+      top: 65rem;
+   }
    .smear3 {
-      top: 89rem;
-   }
-   .smear4 {
-      top: 111rem;
-   }
-   .smear5 {
-      bottom: 9rem;
+      top: 98rem;
    }
 }
 
+@media (max-width: 1281px) {
+   .smear3 {
+      top: 102rem;
+   }
+   .smear4 {
+      top: 121rem;
+   }
+}
 
 
 @media (max-width: 1250px) {
@@ -55,6 +61,12 @@
       margin: 10rem 0 0 10rem;
       grid-template-columns: repeat(6, 40px);
       grid-template-rows: repeat(6, 40px);
+   }
+   .smear2 {
+      top: 67rem;
+   }
+   .smear4 {
+      top: 123rem;
    }
 }
 
@@ -75,7 +87,7 @@
       margin: 1rem;
    }
    .smear3 {
-      top: 91rem;
+      top: 103rem;
    }
 }
 
@@ -91,7 +103,6 @@
       margin: 10rem 0 0 6rem;
    }
 }
-
 
 
 
@@ -117,13 +128,16 @@
       height: 11.5rem;
    }
    .smear2 {
-      top: 62rem;
+      top: 66rem;
    }
-   .smear4 {
-      top: 109rem;
+   .smear3 {
+      top: 105rem;
    }
    .smear5 {
-      bottom: 8rem;
+      bottom: 7rem;
+   }
+   .projects .svg2 {
+      bottom: -5rem;
    }
 }
 
@@ -139,12 +153,24 @@
    .budy .wrapperS {
       margin: 10rem 0 0 2rem;
    }
+   .smear3 {
+      top: 106rem;
+   }
+   .smear4 {
+      top: 125rem;
+   }
 }
 
 @media (max-width: 1000px) {
    header .headerTitle h2 {
       // color: blue;
       bottom: 17%;
+   }
+   .smear {
+      top: 38rem;
+   }
+   .smear4 {
+      top: 128rem;
    }
 }
 
@@ -171,7 +197,15 @@
    .smear {
       top: 35rem;
    }
-
+   .smear2 {
+      top: 67rem;
+   }
+   .smear3 {
+      top: 108rem;
+   }
+   .projects .svg2 {
+      bottom: -4rem;
+   }
 }
 
 @media (max-width: 915px) {
@@ -195,19 +229,20 @@
       width: 60%;
    }
    .smear {
-      top: 32rem;
+      top: 34rem;
+      width: 19%;
    }
    .smear2 {
-      top: 57rem;
+      top: 60rem;
    }
    .project .flexP .projectInfo {
       width: 50%;
    }
    .smear3 {
-      top: 82rem;
+      top: 95rem;
    }
    .smear4 {
-      top: 98rem;
+      top: 114rem;
    }
 }
 
@@ -244,6 +279,9 @@
    .smear {
       top: 30rem;
    }
+   .projects .svg2 {
+      bottom: -3rem;
+   }
 }
 
 @media (max-width: 834px) {
@@ -251,13 +289,7 @@
       top: 59rem;
    }
    .smear3 {
-      top: 85rem;
-   }
-   .smear4 {
-      top: 101rem;
-   }
-   .smear5 {
-      bottom: 8rem;
+      top: 96rem;
    }
 }
 
@@ -289,14 +321,14 @@
    .blogImg img {
       height: 20rem;
    }
+   .smear {
+      top: 33rem;
+   }
    .smear2 {
-      top: 56rem;
+      top: 58rem;
    }
    .smear3 {
-      top: 81rem;
-   }
-   .smear4 {
-      top: 96rem;
+      top: 94rem;
    }
    .smear5 {
       bottom: 7rem;
@@ -323,19 +355,14 @@
       width: 65%;
    }
    .smear2 {
-      top: 58rem;
+      top: 60rem;
    }
    .smear3 {
-      top: 85rem;
+      top: 96rem;
    }
    
 }
 
-@media (max-width: 750px) {
-   .smear4 {
-      top: 98rem;
-   }
-}
 
 @media (max-width: 734px) {
    .budy {
@@ -356,23 +383,27 @@
    .project .flexP .projectInfo {
       width: 100%;
    }
+   .projects .svg2 {
+      bottom: -2rem;
+   }
    .smear {
-      top: 47rem;
+      top: 51rem;
+      right: 3rem;
    }
    .smear2 {
-      top: 70rem;
+      top: 73rem;
       width: 25%;
    }
    .smear3 {
-      top: 132rem;
+      top: 143rem;
       width: 25%;
    }
    .smear4 {
-      top: 150rem;
+      top: 165rem;
       width: 25%;
    }
    .smear5 {
-      bottom: 11.5rem;
+      bottom: 9.8rem;
       width: 25%;
    }
 }
@@ -394,16 +425,21 @@
       }
    }
    .smear {
-      top: 45rem;
+      top: 50rem;
+      right: 3rem;
+      width: 26%;
    }
    .smear2 {
-      top: 67rem;
+      top: 71rem;
    }
    .smear3 {
-      top: 129rem;
+      top: 140rem;
    }
    .smear4 {
-      top: 146rem;
+      top: 161rem;
+   }
+   .smear5 {
+      bottom: 8.5rem;
    }
 }
 
@@ -418,16 +454,19 @@
       width: 30%;
    }
    .smear {
-      top: 43rem;
+      top: 45rem;
    }
    .smear2 {
-      top: 65rem;
+      top: 70rem;
    }
    .smear3 {
-      top: 122rem;
+      top: 134rem;
    }
    .smear4 {
-      top: 142rem;
+      top: 157rem;
+   }
+   .projects .svg2 {
+      bottom: -1rem;
    }
 }
 
@@ -451,16 +490,16 @@
       }
    }
    .smear {
-      top: 41rem;
+      top: 44rem;
+   }
+   .smear2 {
+      top: 69rem;
    }
    .smear3 {
-      top: 119rem;
+      top: 133rem;
    }
    .smear4 {
-      top: 137rem;
-   }
-   .smear5 {
-      bottom: 8.5rem;
+      top: 151rem;
    }
 }
 
@@ -505,17 +544,26 @@
       font-size: 0.8rem;
    }
    .smear2 {
-      top: 63rem;
+      top: 67rem;
    }
    .smear3 {
-      top: 117rem;
+      top: 131rem;
       right: 2rem;
+   }
+   .smear4 {
+      top: 149rem;
+   }
+   .projects .svg2 {
+      bottom: 0rem;
    }
 }
 
 @media (max-width: 500px) {
-   .smear4 {
-      top: 134rem;
+   .smear {
+      top: 43rem;
+   }
+   .smear3 {
+      top: 130rem;
    }
 }
 
@@ -565,15 +613,15 @@
       }
    }
    .smear {
-      top: 40rem;
+      top: 43rem;
       width: 25%;
    }
    .smear3 {
-      top: 115rem;
+      top: 128rem;
    }
    .smear4 {
+      top: 147rem;
       left: 2rem;
-      top: 131rem;
    }
    .smear5 {
       right: 2rem;
@@ -594,17 +642,14 @@
    .about .headshot {
       width: 95%;
    }
-      .smear {
-      top: 38rem;
-   }
-   .smear2 {
-      top: 57rem;
+   .smear {
+      top: 42rem;
    }
    .smear3 {
-      top: 108rem;
+      top: 127rem;
    }
    .smear4 {
-      top: 129rem;
+      top: 145rem;
    }
    
 }
@@ -657,14 +702,11 @@
       font-size: 0.6rem;
    }
    .smear {
-      top: 37rem;
+      top: 41rem;
       right: 1.5rem;
    }
    .smear3 {
-      top: 107rem;
-   }
-   .smear4 {
-      top: 127rem;
+      top: 125rem;
    }
 }
 
@@ -678,40 +720,49 @@
 }
 
 
-@media (max-width: 368px) {
-   .smear3 {
-      top: 107.5rem;
-   }
-   .smear4 {
-      top: 131rem;
-   }
-}
-
 @media (max-width: 350px) {
       .about h3 {
       .work {
          margin-left: 1rem;
       }
    }
-    .smear2 {
-      top: 59rem;
+   .smear {
+      top: 39rem;
+   }
+   .smear2 {
+      top: 69rem;
    }
    .smear3 {
-      top: 112.2rem;
+      top: 128rem;
+   }
+}
+
+@media (max-width: 339px) {
+   .smear3 {
+      top: 130rem;
+   }
+   .smear4 {
+      top: 151rem;
    }
 }
 
 @media (max-width: 334px) {
+   .smear {
+      top: 42rem;
+   }
+   .smear2 {
+      top: 72rem;
+   }
    .smear3 {
-      top: 115rem;
+      top: 132rem;
    }
 }
 
 @media (max-width: 320px) {
-   .smear3 {
-      top: 109rem;
+   .smear2 {
+      top: 74rem;
    }
    .smear4 {
-      top: 133rem;
+      top: 153rem;
    }
 }

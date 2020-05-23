@@ -64,19 +64,10 @@ header {
             font-size: 1rem;
             margin-top: 1rem;
          }
-         li a::after {
-            content: '*';
-            color: rgba(0,0,0,0);
-         }
          li:hover a {
             color: grey;
             text-decoration: underline;
             transition: all 0.6s;
-            &::after {
-               content: '*';
-               color: red;
-               transition: all 0.6s;
-            }
          }
       }
    }
@@ -170,17 +161,9 @@ header {
       text-transform: uppercase;
       letter-spacing: 1.2px;
       border-bottom: 3px solid rgba(0,0,0,0.0);
-      &::after {
-         content: '*';
-         color: rgba(0,0,0,0.0);
-      }
       &:hover {
          border-bottom: 3px solid #2b4152;
          // transform: scale(0.9);
-         &::after {
-               content: '*';
-               color: grey;
-            }
          }
          a {
          text-decoration: none;

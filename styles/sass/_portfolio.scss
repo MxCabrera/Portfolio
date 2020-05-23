@@ -92,7 +92,7 @@
             text-shadow: 1px 1px 2px #fff;
          }
          button {
-            padding: 0.5rem;
+            padding: 0.7rem;
             background-color: black;
             border-radius: none;
             margin-top: 2rem;
@@ -100,7 +100,7 @@
             a {
                color: white; 
                text-decoration: none;
-               font-size: .75rem;
+               font-size: .9rem;
                letter-spacing: 1.3px;
                text-transform: uppercase;
                &:focus {
@@ -122,58 +122,42 @@
    
 }
 
+.smear,
+.smear2,
+.smear3,
+.smear4,
+.smear5 {
+   width: 19%;
+   position: absolute;
+   z-index: 1;
+   img {
+      width: 100%;
+   }
+}
 
 .smear {
-   width: 20%;
-   position: absolute;
    right: 3rem;
    top: 39rem;
    z-index: 1;
    transform: rotate(-25deg);
-   img {
-      width: 100%;
-   }
 }
 .smear2 {
-   width: 20%;
-   position: absolute;
    left: 3rem;
    top: 64rem;
    transform: rotate(-155deg);
-   z-index: 1;
-   img {
-      width: 100%;
-   }
 }
 .smear3 {
-   width: 20%;
-   position: absolute;
-   right: 3.5rem;
+   right: 3rem;
    top: 95rem;
    transform: rotate(-25deg);
-   z-index: 0;
-   img {
-      width: 100%;
-   }
 }
 .smear4 {
-   width: 20%;
-   position: absolute;
    left: 3rem;
    top: 120rem;
    transform: rotate(-155deg);
-   img {
-      width: 100%;
-   }
 }
 .smear5 {
-   width: 20%;
-   position: absolute;
    right: 4.5rem;
-   bottom: 10.5rem;
+   bottom: 9.5rem;
    transform: rotate(-25deg);
-   z-index: 999;
-   img {
-      width: 100%;
-   }
 }
