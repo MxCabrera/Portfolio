@@ -1140,6 +1140,12 @@ header .headerButton:active {
   }
 }
 
+.skillsInfo {
+  text-align: center;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
 .blog {
   background: linear-gradient(45deg, rgba(236, 237, 241, 0.8), rgba(238, 236, 241, 0.8), rgba(240, 236, 237, 0.8)), url(../../assets/geo2.jpg);
   background-attachment: fixed;
@@ -1471,6 +1477,7 @@ form button {
 
 form button:hover {
   background-color: grey;
+  color: black;
 }
 
 .message {
@@ -2196,6 +2203,12 @@ textarea:active {
     width: 75px;
     height: 75px;
   }
+  header .myContact {
+    background-color: white;
+  }
+  header .myContact:hover {
+    background-color: white;
+  }
   header .headerTitle h1 {
     font-size: 3rem;
     bottom: 40%;
@@ -2230,6 +2243,12 @@ textarea:active {
   }
   .smear3 {
     top: 125rem;
+  }
+  .skillsInfo {
+    font-size: 0.65rem;
+  }
+  .blogInfo button {
+    width: 50%;
   }
 }
 
@@ -2284,6 +2303,9 @@ textarea:active {
   }
   .smear3 {
     top: 132rem;
+  }
+  .bodyz .quotes .box {
+    height: 27rem;
   }
 }
 

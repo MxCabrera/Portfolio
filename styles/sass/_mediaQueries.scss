@@ -676,6 +676,12 @@
          width: 75px;
          height: 75px;
       }
+      .myContact {
+         background-color: white;
+         &:hover {
+            background-color: white;
+         }
+      }
       .headerTitle {
          h1 {
             font-size: 3rem;
@@ -717,6 +723,12 @@
    }
    .smear3 {
       top: 125rem;
+   }
+   .skillsInfo {
+      font-size: 0.65rem;
+   }
+   .blogInfo button {
+      width: 50%;
    }
 }
 
@@ -774,6 +786,9 @@
    }
    .smear3 {
       top: 132rem;
+   }
+   .bodyz .quotes .box {
+      height: 27rem;
    }
 }
 
