@@ -665,14 +665,24 @@
          justify-content: center
       }
    }
+   
    header {
+      height: 700px;
+      .headerButton {
+         bottom: 5rem;
+      }
+      .topnav .logoContainer .logo {
+         margin: 1rem auto 1rem auto;
+         width: 75px;
+         height: 75px;
+      }
       .headerTitle {
          h1 {
             font-size: 3rem;
             bottom: 40%;
          }
          h2 {
-            left: 22%;
+            left: 26%;
             font-size: 1.7rem;
             bottom: 6%;
          }
@@ -717,11 +727,17 @@
    .svgz {
       display: none;
    }
+   header .headerTitle h2 {
+    left: 25%;
+   }
 }
 
 
 @media (max-width: 350px) {
-      .about h3 {
+   header .headerTitle h2 {
+    left: 24%;
+   }
+   .about h3 {
       .work {
          margin-left: 1rem;
       }
@@ -747,6 +763,9 @@
 }
 
 @media (max-width: 334px) {
+   header .headerTitle h2 {
+      left: 22%;
+   }
    .smear {
       top: 42rem;
    }
@@ -759,6 +778,15 @@
 }
 
 @media (max-width: 320px) {
+   header {
+      .headerTitle h2 {
+       left: 22%;
+      }
+      .headerButton {
+         left: 9.2rem;
+      }
+   }
+      
    .smear2 {
       top: 74rem;
    }

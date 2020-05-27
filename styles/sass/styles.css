@@ -602,8 +602,8 @@ header .headerButton:active {
   font-family: 'Montserrat', sans-serif;
   white-space: nowrap;
   letter-spacing: .15rem;
-  -webkit-animation: typing 3.5s steps(25, end), blink-caret 1s step-end infinite;
-          animation: typing 3.5s steps(25, end), blink-caret 1s step-end infinite;
+  -webkit-animation: typing 3.5s steps(25, end), blink-caret 2s step-end infinite;
+          animation: typing 3.5s steps(25, end), blink-caret 2s step-end infinite;
   width: 30%;
   font-weight: 700;
   color: #2b4152;
@@ -2185,12 +2185,23 @@ textarea:active {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  header {
+    height: 700px;
+  }
+  header .headerButton {
+    bottom: 5rem;
+  }
+  header .topnav .logoContainer .logo {
+    margin: 1rem auto 1rem auto;
+    width: 75px;
+    height: 75px;
+  }
   header .headerTitle h1 {
     font-size: 3rem;
     bottom: 40%;
   }
   header .headerTitle h2 {
-    left: 22%;
+    left: 26%;
     font-size: 1.7rem;
     bottom: 6%;
   }
@@ -2229,9 +2240,15 @@ textarea:active {
   .svgz {
     display: none;
   }
+  header .headerTitle h2 {
+    left: 25%;
+  }
 }
 
 @media (max-width: 350px) {
+  header .headerTitle h2 {
+    left: 24%;
+  }
   .about h3 .work {
     margin-left: 1rem;
   }
@@ -2256,6 +2273,9 @@ textarea:active {
 }
 
 @media (max-width: 334px) {
+  header .headerTitle h2 {
+    left: 22%;
+  }
   .smear {
     top: 42rem;
   }
@@ -2268,6 +2288,12 @@ textarea:active {
 }
 
 @media (max-width: 320px) {
+  header .headerTitle h2 {
+    left: 22%;
+  }
+  header .headerButton {
+    left: 9.2rem;
+  }
   .smear2 {
     top: 74rem;
   }
