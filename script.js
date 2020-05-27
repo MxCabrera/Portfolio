@@ -16,7 +16,7 @@ $('.arrowD').on('click', function(){
 // play audio when header button is clicked
 
 $('.headerButton').on('click', function() {
-   window.scrollTo(0,800);
+   window.scrollTo(0,700);
    // if (app.isPlaying) {
    //    audio.stop();
    // } else {

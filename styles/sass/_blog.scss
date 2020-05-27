@@ -7,9 +7,7 @@
    .spacing {
       margin-top: -3rem;
       h2 {
-         // font-family: 'Dancing Script', cursive;
          font-family: 'Montserrat', sans-serif;
-         font-weight: 400;
          font-size: 3rem;
       }
    }
@@ -55,7 +53,7 @@
          padding: 1.25rem;
          box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.7);
          &:hover {
-            color: #f2f2f2;
+            color: rgb(32, 32, 32);
             box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.8);
          }
          &::before {
