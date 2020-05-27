@@ -794,7 +794,7 @@ header .headerButton:active {
 
 .projects .svg2 {
   position: absolute;
-  bottom: -6rem;
+  bottom: -5.5rem;
   z-index: 1000;
   left: 0;
   right: 0;
