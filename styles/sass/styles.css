@@ -1628,6 +1628,9 @@ textarea:active {
   header .headerTitle h1 {
     left: 14%;
   }
+  header .headerTitle h2 {
+    left: 36%;
+  }
   .budy .wrapperS {
     margin: 10rem 0 0 8rem;
   }
@@ -1699,6 +1702,7 @@ textarea:active {
 
 @media (max-width: 1000px) {
   header .headerTitle h2 {
+    left: 35%;
     bottom: 17%;
   }
   .smear {
@@ -1748,6 +1752,9 @@ textarea:active {
 @media (max-width: 915px) {
   .budy .wrapperS {
     margin: 10rem -3.5rem 0 0rem;
+  }
+  header .headerTitle h2 {
+    left: 34%;
   }
   .about .headshot {
     width: 50%;
@@ -1983,6 +1990,9 @@ textarea:active {
 }
 
 @media (max-width: 650px) {
+  header .headerTitle h2 {
+    left: 30%;
+  }
   .about h3 {
     font-size: 0.8rem;
   }
@@ -2012,6 +2022,9 @@ textarea:active {
 @media (max-width: 595px) {
   header .headerTitle h1 {
     font-size: 4rem;
+  }
+  header .headerTitle h2 {
+    left: 26%;
   }
   header .topnav .flexNav {
     width: 70%;
@@ -2085,11 +2098,18 @@ textarea:active {
 }
 
 @media (max-width: 500px) {
+  header .headerTitle h2 {
+    left: 20%;
+  }
   .smear {
     top: 43rem;
   }
   .smear3 {
     top: 130rem;
+  }
+  .about .miguel {
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -2109,7 +2129,8 @@ textarea:active {
         flex-wrap: wrap;
   }
   header .headerTitle h2 {
-    left: 25%;
+    left: 26%;
+    font-size: 1.5rem;
     bottom: 10%;
   }
   .about h3 {
@@ -2207,8 +2228,7 @@ textarea:active {
     bottom: 40%;
   }
   header .headerTitle h2 {
-    left: 26%;
-    font-size: 1.7rem;
+    left: 21.5%;
     bottom: 6%;
   }
   header .svg {
@@ -2253,13 +2273,13 @@ textarea:active {
     display: none;
   }
   header .headerTitle h2 {
-    left: 25%;
+    left: 20%;
   }
 }
 
 @media (max-width: 350px) {
   header .headerTitle h2 {
-    left: 24%;
+    left: 19%;
   }
   .about h3 .work {
     margin-left: 1rem;
@@ -2285,9 +2305,6 @@ textarea:active {
 }
 
 @media (max-width: 334px) {
-  header .headerTitle h2 {
-    left: 22%;
-  }
   .smear {
     top: 42rem;
   }
@@ -2304,7 +2321,7 @@ textarea:active {
 
 @media (max-width: 320px) {
   header .headerTitle h2 {
-    left: 22%;
+    left: 15%;
   }
   header .headerButton {
     left: 9.2rem;
