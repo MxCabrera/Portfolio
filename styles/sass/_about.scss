@@ -16,13 +16,13 @@
    .miguel {
       width: 20%;
       float: left;
-      shape-outside: circle(50%);
+      // shape-outside: circle(50%);
       margin: 1rem 2rem 1rem 0;
       z-index: 1000;
       img {
          width: 100%;
-         border-radius: 50%;
-         border: 0.7rem solid #2b4152;
+         // border-radius: 50%;
+         border: 0.5rem solid #2b4152;
          box-shadow: 2px 2px 10px #000;
       }
    }
