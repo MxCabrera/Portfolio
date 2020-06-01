@@ -2273,7 +2273,10 @@ textarea:active {
     display: none;
   }
   header .headerTitle h2 {
-    left: 20%;
+    left: 16%;
+  }
+  header .headerButton {
+    left: 11rem;
   }
 }
 
