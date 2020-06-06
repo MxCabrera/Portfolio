@@ -322,8 +322,6 @@ header .svg {
   position: absolute;
   bottom: -1.5rem;
   z-index: 0;
-  left: 0;
-  right: 0;
 }
 
 header .head {
@@ -819,7 +817,7 @@ header .headerButton:active {
           flex-direction: column;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 14%;
   float: right;
 }
 
@@ -1664,6 +1662,9 @@ textarea:active {
   .smear5 {
     bottom: 8rem;
   }
+  .content .flexMe i {
+    font-size: 4rem;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -1687,6 +1688,9 @@ textarea:active {
   }
   .smear4 {
     top: 121rem;
+  }
+  header .svg {
+    bottom: -3.5rem;
   }
 }
 
@@ -1731,6 +1735,9 @@ textarea:active {
   }
   .budy .wrapperS {
     margin: 10rem 0 0 6rem;
+  }
+  header .svg {
+    bottom: -4.5rem;
   }
 }
 
@@ -1779,6 +1786,9 @@ textarea:active {
   }
   .smear4 {
     top: 125rem;
+  }
+  header .svg {
+    bottom: -5.5rem;
   }
 }
 
@@ -1829,6 +1839,12 @@ textarea:active {
   .projects .svg2 {
     bottom: -4rem;
   }
+  header .svg {
+    bottom: -6.5rem;
+  }
+  .contact .flexP .contactImg .interested {
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 915px) {
@@ -1869,6 +1885,9 @@ textarea:active {
   }
   .smear4 {
     top: 114rem;
+  }
+  header .svg {
+    bottom: -7.5rem;
   }
 }
 
@@ -2199,11 +2218,11 @@ textarea:active {
   header {
     height: 667px;
   }
-  header .svg {
-    bottom: -4.3rem;
-  }
   header .headerTitle {
     text-shadow: 4px 4px 1px #fff;
+  }
+  header .svg {
+    bottom: 0.5rem;
   }
   header .topnav .flexNav {
     width: 55%;
@@ -2260,11 +2279,8 @@ textarea:active {
     width: 85%;
     left: 8%;
   }
-  header .svg {
-    display: none;
-  }
   .about .headshot {
-    width: 95%;
+    width: 100%;
   }
   .smear {
     top: 42rem;
@@ -2294,6 +2310,9 @@ textarea:active {
   header .headerButton {
     bottom: 5rem;
   }
+  header .svg {
+    bottom: -1.5rem;
+  }
   header .topnav .logoContainer .logo {
     margin: 1rem auto 1rem auto;
     width: 75px;
@@ -2312,9 +2331,6 @@ textarea:active {
   header .headerTitle h2 {
     left: 21.5%;
     bottom: 6%;
-  }
-  header .svg {
-    bottom: -2.3rem;
   }
   .content .flexMe i {
     font-size: 3rem;
@@ -2348,9 +2364,6 @@ textarea:active {
 }
 
 @media (max-width: 375px) {
-  header .svg {
-    bottom: 3.7rem;
-  }
   .svgz {
     display: none;
   }
@@ -2359,6 +2372,9 @@ textarea:active {
   }
   header .headerButton {
     left: 11rem;
+  }
+  .projects h2 {
+    font-size: 2.5rem;
   }
 }
 

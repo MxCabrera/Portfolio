@@ -26,6 +26,9 @@
    .smear5 {
       bottom: 8rem;
    }
+   .content .flexMe i {
+      font-size: 4rem;
+   }
 }
 
 
@@ -51,6 +54,11 @@
    }
    .smear4 {
       top: 121rem;
+   }
+   header {
+      .svg {
+         bottom: -3.5rem;
+      }
    }
 }
 
@@ -104,6 +112,11 @@
    }
    .budy .wrapperS {
       margin: 10rem 0 0 6rem;
+   }
+   header {
+      .svg {
+         bottom: -4.5rem;
+      }
    }
 }
 
@@ -162,6 +175,11 @@
    .smear4 {
       top: 125rem;
    }
+   header {
+      .svg {
+         bottom: -5.5rem;
+      }
+   }
 }
 
 @media (max-width: 1000px) {
@@ -210,7 +228,16 @@
    .projects .svg2 {
       bottom: -4rem;
    }
+   header {
+      .svg {
+         bottom: -6.5rem;
+      }
+   }
+   .contact .flexP .contactImg .interested {
+      font-size: 1.3rem;
+   }
 }
+
 
 @media (max-width: 915px) {
    .budy .wrapperS {
@@ -250,6 +277,11 @@
    }
    .smear4 {
       top: 114rem;
+   }
+   header {
+      .svg {
+         bottom: -7.5rem;
+      }
    }
 }
 
@@ -593,11 +625,11 @@
 @media (max-width: 469px) {
    header {
       height: 667px;
-      .svg {
-         bottom: -4.3rem;
-      }
       .headerTitle {
          text-shadow: 4px 4px 1px #fff; 
+      }
+      .svg {
+         bottom: 0.5rem;
       }
    }
    header .topnav .flexNav {
@@ -657,11 +689,8 @@
       width: 85%;
       left: 8%;
    }
-   header .svg {
-      display: none;
-   }
    .about .headshot {
-      width: 95%;
+      width: 100%;
    }
    .smear {
       top: 42rem;
@@ -692,6 +721,9 @@
       .headerButton {
          bottom: 5rem;
       }
+      .svg {
+         bottom: -1.5rem;
+      }
       .topnav .logoContainer .logo {
          margin: 1rem auto 1rem auto;
          width: 75px;
@@ -712,9 +744,6 @@
             left: 21.5%;
             bottom: 6%;
          }
-      }
-      .svg {
-         bottom: -2.3rem;
       }
    }
    .content .flexMe i {
@@ -753,9 +782,6 @@
 }
 
 @media (max-width: 375px) {
-   header .svg {
-      bottom: 3.7rem;
-   }
    .svgz {
       display: none;
    }
@@ -764,6 +790,11 @@
    }
    header .headerButton {
       left: 11rem;
+   }
+   .projects {
+      h2 {
+         font-size: 2.5rem;
+      }
    }
 }
 
