@@ -2291,6 +2291,12 @@ textarea:active {
   .smear4 {
     top: 145rem;
   }
+  .message h4,
+  .message .migs,
+  .message p {
+    font-size: 1.1rem;
+    width: 100%;
+  }
 }
 
 @media (max-width: 400px) {
