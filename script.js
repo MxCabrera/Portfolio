@@ -276,3 +276,15 @@ $('.acc').on('click', function () {
       // background: '#fff url(https://image.shutterstock.com/z/stock-vector--exclamation-mark-exclamation-mark-hazard-warning-symbol-flat-design-style-vector-eps-444778462.jpg)'
    })
 })
+
+
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.nav-links li');
+
+hamburger.addEventListener('click', () => {
+   navLinks.classList.toggle('open');
+   links.forEach(link => {
+      link.classList.toggle('fade');
+   })
+})

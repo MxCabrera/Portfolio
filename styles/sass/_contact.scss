@@ -1,10 +1,16 @@
 .contact {
    padding: 1rem 0;
-   margin: -4rem auto 2rem auto;
+   margin: -4rem auto 0.5rem auto;
    .flexP {
       justify-content: space-between;
       .contactImg {
          width: 40%;
+         .interested {
+            font-size: 1.7rem;
+            span {
+               color:#c54747;
+            }
+         }
          img {
             width: 100%;
             height: 20rem;
@@ -64,6 +70,7 @@ form {
    width: 100%;
    label {
       width: 100%;
+      font-family: 'Montserrat', sans-serif;
    }
    input,
    textarea {
@@ -79,13 +86,18 @@ form {
       text-transform: uppercase;
       font-weight: 400;
       letter-spacing: 1.6px;
-      background-color:black;
+      background-color:#2b4152;
       margin-top: 1.5rem;
       color: white;
       cursor: pointer;
       &:hover {
-         background-color: grey;
+         // background-color: #f0f0e5;
+         background-color: rgb(196, 66, 66);
+         // border: 1px solid rgb(196, 66, 66);
+         border: 1px solid #2b4152;
          transition: all 0.5s;
+         // color: #2b4152;
+         box-shadow: 2px 3px 5px #000;
 
       }
    }
@@ -95,26 +107,32 @@ form {
    text-align: center;
    margin-top: 5rem;
    p {
-      font-size: 1rem;
+      font-size: 1.4rem;
       width: 70%;
-      margin: 0 auto;
+      margin: 1rem auto;
+      text-transform: uppercase;
    }
    h4 {
       font-size: 1.3rem;
+      text-transform: uppercase;
       font-weight: 400;
-      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      // font-family: 'Poppins', sans-serif;
       }
    .migs {
    font-weight: 500;
    // font-family: 'Dancing Script', cursive;
    font-size: 1.4rem;
    text-decoration: underline;
+   text-transform: none;
+   margin-bottom: 1rem;
    a {
       color: black;
+      // font-family: 'Poppins', sans-serif;
    }
    &:hover {
       a {
-         color: rgb(226, 102, 102);
+         color: rgb(197, 71, 71);
          text-decoration: none;
          transition: all 1s;
          transform: scale(1.3);
@@ -125,7 +143,7 @@ form {
 
 input:focus,
 textarea:focus {
-   border: 1px solid purple;
+   border: 1px solid red;
 }
 
 input:active,
