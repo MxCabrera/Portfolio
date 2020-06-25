@@ -819,6 +819,7 @@ header .headerButton:active {
   position: sticky;
   top: 14%;
   float: right;
+  z-index: 1;
 }
 
 .projects .projectNav .fas {
@@ -924,6 +925,9 @@ header .headerButton:active {
 
 .project .flexP .projectInfo a {
   font-size: .9rem;
+  height: 3rem;
+  margin-top: 2rem;
+  display: inline-block;
 }
 
 .project .flexP .projectInfo a:focus {
@@ -942,7 +946,6 @@ header .headerButton:active {
   color: white;
   padding: 0.7rem;
   background-color: black;
-  margin-top: 2rem;
   z-index: 1000;
 }
 
@@ -958,7 +961,7 @@ header .headerButton:active {
 .smear5 {
   width: 19%;
   position: absolute;
-  z-index: 1;
+  z-index: 0;
 }
 
 .smear img,
@@ -1000,7 +1003,7 @@ header .headerButton:active {
 
 .smear5 {
   right: 4.5rem;
-  bottom: 9.5rem;
+  bottom: 37.5rem;
   -webkit-transform: rotate(-25deg);
           transform: rotate(-25deg);
 }
@@ -1660,7 +1663,7 @@ textarea:active {
     top: 117rem;
   }
   .smear5 {
-    bottom: 8rem;
+    bottom: 37rem;
   }
   .content .flexMe i {
     font-size: 4rem;
@@ -1765,9 +1768,6 @@ textarea:active {
   }
   .smear3 {
     top: 105rem;
-  }
-  .smear5 {
-    bottom: 7rem;
   }
   .projects .svg2 {
     bottom: -5rem;
@@ -1889,6 +1889,9 @@ textarea:active {
   header .svg {
     bottom: -7.5rem;
   }
+  .smear5 {
+    bottom: 35rem;
+  }
 }
 
 @media (max-width: 867px) {
@@ -1980,9 +1983,6 @@ textarea:active {
   .smear3 {
     top: 94rem;
   }
-  .smear5 {
-    bottom: 7rem;
-  }
 }
 
 @media (max-width: 791px) {
@@ -2053,7 +2053,7 @@ textarea:active {
     width: 25%;
   }
   .smear5 {
-    bottom: 9.8rem;
+    bottom: 54rem;
     width: 25%;
   }
 }
@@ -2086,7 +2086,7 @@ textarea:active {
     top: 161rem;
   }
   .smear5 {
-    bottom: 8.5rem;
+    bottom: 51rem;
   }
 }
 
@@ -2193,6 +2193,9 @@ textarea:active {
   .smear4 {
     top: 149rem;
   }
+  .smear5 {
+    bottom: 49rem;
+  }
   .projects .svg2 {
     bottom: 0rem;
   }
@@ -2269,7 +2272,6 @@ textarea:active {
   }
   .smear5 {
     right: 2rem;
-    bottom: 8.5rem;
   }
 }
 
@@ -2290,6 +2292,10 @@ textarea:active {
   }
   .smear4 {
     top: 145rem;
+  }
+  .smear5 {
+    bottom: 47rem;
+    z-index: 0;
   }
   .message h4,
   .message .migs,
@@ -2316,9 +2322,6 @@ textarea:active {
   header .headerButton {
     bottom: 5rem;
   }
-  header .svg {
-    bottom: -1.5rem;
-  }
   header .topnav .logoContainer .logo {
     margin: 1rem auto 1rem auto;
     width: 75px;
@@ -2337,6 +2340,9 @@ textarea:active {
   header .headerTitle h2 {
     left: 21.5%;
     bottom: 6%;
+  }
+  header .svg {
+    display: none;
   }
   .content .flexMe i {
     font-size: 3rem;

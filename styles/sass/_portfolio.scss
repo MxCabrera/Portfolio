@@ -12,6 +12,7 @@
       position: sticky;
       top: 14%;
       float: right;
+      z-index: 1;
       .fas {
          font-size: 2rem;
          margin-right: 1.3rem;
@@ -92,6 +93,9 @@
          }
          a {
             font-size: .9rem;
+            height: 3rem;
+            margin-top: 2rem;
+            display: inline-block;
             &:focus {
                   border: 1px solid red;
                }
@@ -106,7 +110,6 @@
                color: white; 
                padding: 0.7rem;
                background-color: black;
-               margin-top: 2rem;
                z-index: 1000;
                &:hover {
                   background-color: white;
@@ -126,7 +129,7 @@
 .smear5 {
    width: 19%;
    position: absolute;
-   z-index: 1;
+   z-index: 0;
    img {
       width: 100%;
    }
@@ -155,6 +158,6 @@
 }
 .smear5 {
    right: 4.5rem;
-   bottom: 9.5rem;
+   bottom: 37.5rem;
    transform: rotate(-25deg);
 }

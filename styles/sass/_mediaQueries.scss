@@ -24,7 +24,7 @@
       top: 117rem;
    }
    .smear5 {
-      bottom: 8rem;
+      bottom: 37rem;
    }
    .content .flexMe i {
       font-size: 4rem;
@@ -148,9 +148,6 @@
    }
    .smear3 {
       top: 105rem;
-   }
-   .smear5 {
-      bottom: 7rem;
    }
    .projects .svg2 {
       bottom: -5rem;
@@ -283,6 +280,9 @@
          bottom: -7.5rem;
       }
    }
+   .smear5 {
+      bottom: 35rem;
+   }
 }
 
 
@@ -369,9 +369,6 @@
    .smear3 {
       top: 94rem;
    }
-   .smear5 {
-      bottom: 7rem;
-   }
 }
 
 
@@ -442,7 +439,7 @@
       width: 25%;
    }
    .smear5 {
-      bottom: 9.8rem;
+      bottom: 54rem;
       width: 25%;
    }
 }
@@ -478,7 +475,7 @@
       top: 161rem;
    }
    .smear5 {
-      bottom: 8.5rem;
+      bottom: 51rem;
    }
 }
 
@@ -598,6 +595,9 @@
    .smear4 {
       top: 149rem;
    }
+   .smear5 {
+      bottom: 49rem;
+   }
    .projects .svg2 {
       bottom: 0rem;
    }
@@ -678,7 +678,6 @@
    }
    .smear5 {
       right: 2rem;
-      bottom: 8.5rem;
    }
    
 }
@@ -700,6 +699,10 @@
    }
    .smear4 {
       top: 145rem;
+   }
+   .smear5 {
+      bottom: 47rem;
+      z-index: 0;
    }
    .message {
       h4,
@@ -728,9 +731,6 @@
       .headerButton {
          bottom: 5rem;
       }
-      .svg {
-         bottom: -1.5rem;
-      }
       .topnav .logoContainer .logo {
          margin: 1rem auto 1rem auto;
          width: 75px;
@@ -751,6 +751,9 @@
             left: 21.5%;
             bottom: 6%;
          }
+      }
+      .svg {
+         display: none;
       }
    }
    .content .flexMe i {
